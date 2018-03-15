@@ -1,0 +1,14 @@
+//resolutions
+$desktop: 1920px;
+$laptop: 1366px;
+$tablets: 1230px;
+$min-tablets: 870px; 
+$phones: 563px;      
+$min-phones: 420px;  
+
+//configuration
+@import "config/media";
+
+//blocks
+@import "blocks/welcome";
+
