@@ -28,7 +28,10 @@ body {
       height: 853px; } }
   @media screen and (max-width: 563px) {
     .page_top {
-      height: 531px; } }
+      height: 220px;
+      -webkit-transition: 0.2s;
+      -o-transition: 0.2s;
+      transition: 0.2s; } }
 
 .page_service {
   background-color: #007cc5; }
@@ -39,9 +42,6 @@ body {
 .page_about {
   background-color: #8490c7;
   padding: 30px 0; }
-  @media screen and (max-width: 870px) {
-    .page_about {
-      display: none; } }
 
 .page_bottom {
   height: 350px;
@@ -59,10 +59,10 @@ body {
   height: 220px; }
   @media screen and (max-width: 870px) {
     .top_content .container {
-      height: 160px; } }
-  @media screen and (max-width: 870px) {
-    .top_content .container {
       height: 175px; } }
+  @media screen and (max-width: 563px) {
+    .top_content .container {
+      height: 130px; } }
 
 .container {
   position: relative;
@@ -175,13 +175,17 @@ body {
   @media screen and (max-width: 1720px) {
     .contacts_top {
       margin-right: 40px;
-      text-align: center;
       font-size: 15px;
       padding-left: 30px; } }
   @media screen and (max-width: 1560px) {
     .contacts_top {
-      margin-right: 20px;
-      padding-left: 10px; } }
+      margin-right: 30px;
+      padding-left: 20px;
+      font-size: 14px; } }
+  @media screen and (max-width: 1410px) {
+    .contacts_top {
+      margin-right: 12px;
+      padding-left: 13px; } }
   @media screen and (max-width: 1366px) {
     .contacts_top {
       font-size: 14px;
@@ -189,9 +193,9 @@ body {
       margin-left: 30px; } }
   @media screen and (max-width: 1230px) {
     .contacts_top {
-      text-align: center;
       margin-bottom: 40px;
-      font-size: 13px; } }
+      font-size: 13px;
+      text-align: center; } }
   @media screen and (max-width: 870px) {
     .contacts_top {
       font-size: 11px;
@@ -211,13 +215,30 @@ body {
   -ms-flex-align: center;
   align-items: center;
   text-align: center; }
+  @media screen and (max-width: 1560px) {
+    .button {
+      width: 176px; } }
+  @media screen and (max-width: 870px) {
+    .button {
+      margin-left: 20px; } }
   @media screen and (max-width: 563px) {
     .button {
-      margin-top: 20px; } }
+      background-color: #262932;
+      margin-top: 55px;
+      position: absolute;
+      left: 14vw;
+      width: 238px;
+      margin-left: 0; } }
+  @media screen and (max-width: 420px) {
+    .button {
+      left: 3vw; } }
   .button__pic {
     background: url("..//images/zapis_3.png");
     width: 35px;
     height: 25px; }
+    @media screen and (max-width: 563px) {
+      .button__pic {
+        background: url("..//images/zapis1.png"); } }
   .button:hover .button__pic {
     cursor: pointer; }
 
@@ -235,18 +256,35 @@ body {
   .zapis:hover {
     color: #ec1551;
     cursor: pointer; }
+  @media screen and (max-width: 1624px) {
+    .zapis {
+      width: 150px; } }
   @media screen and (max-width: 1560px) {
     .zapis {
-      font-size: 17px; } }
+      font-size: 17px;
+      width: 145px;
+      margin-left: 0; } }
   @media screen and (max-width: 1366px) {
     .zapis {
-      font-size: 16px; } }
+      font-size: 16px;
+      width: 130px; } }
   @media screen and (max-width: 1230px) {
     .zapis {
-      font-size: 15px; } }
+      font-size: 15px;
+      width: 128px; } }
   @media screen and (max-width: 870px) {
     .zapis {
-      font-size: 12px; } }
+      font-size: 12px;
+      width: 100px; } }
+  @media screen and (max-width: 563px) {
+    .zapis {
+      font-size: 15px;
+      color: white;
+      width: 199px; } }
+  @media screen and (max-width: 420px) {
+    .zapis {
+      font-size: 13px;
+      width: 176px; } }
   .zapis--footer {
     margin-left: 20px;
     padding-left: 50px;
@@ -276,6 +314,10 @@ body {
   font-family: "Gotham Pro", sans-serif;
   font-size: 1.3em;
   line-height: 90px; }
+  .menu_wrapper.active {
+    height: 356px; }
+    .menu_wrapper.active .top_menu {
+      display: block; }
   @media screen and (max-width: 1230px) {
     .menu_wrapper {
       padding-right: 60px; } }
@@ -302,6 +344,10 @@ body {
   color: whitesmoke;
   text-decoration: none;
   padding: 5px 20px; }
+
+@media screen and (max-width: 563px) {
+  .top_menu {
+    display: none; } }
 
 .top_menu > li {
   float: left;
@@ -343,18 +389,27 @@ body {
   color: #007cc5; }
 
 .top_menu li > ul {
+  width: 143%;
   position: absolute;
   display: none;
   z-index: 1;
   background-color: #1a1c21;
   text-align: left;
   font-size: 17px; }
+  @media screen and (max-width: 1600px) {
+    .top_menu li > ul {
+      font-size: 15px; } }
   @media screen and (max-width: 1366px) {
     .top_menu li > ul {
-      font-size: 14px; } }
+      font-size: 14px;
+      width: 133%; } }
+  @media screen and (max-width: 1230px) {
+    .top_menu li > ul {
+      width: 140%; } }
   @media screen and (max-width: 870px) {
     .top_menu li > ul {
-      font-size: 10.5px; } }
+      font-size: 10.5px;
+      width: 115%; } }
 
 .top_menu li > ul > li {
   list-style: none;
@@ -391,10 +446,19 @@ body {
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
-      width: 17px;
+      position: absolute;
+      right: 15vw;
+      top: 158px;
+      width: 18px;
       height: 18px;
-      background: url("..//images/mobile button.png") no-repeat;
-      margin-left: 30px; }
+      background: url("..//images/mobile button.png") center center no-repeat;
+      background-color: #1b1e26;
+      padding: 6px;
+      border-radius: 5px; } }
+  @media screen and (max-width: 563px) and (max-width: 420px) {
+    .mobile-menu {
+      right: 3vw; } }
+  @media screen and (max-width: 563px) {
       .mobile-menu:hover {
         -webkit-transform: scale(1.1);
         -ms-transform: scale(1.1);
@@ -532,10 +596,30 @@ body {
 /* типовой блок на главной*/
 .block_description h2, .block_description h1 {
   color: #fff; }
+  @media screen and (max-width: 870px) {
+    .block_description h2, .block_description h1 {
+      font-size: 26px; } }
+  @media screen and (max-width: 563px) {
+    .block_description h2, .block_description h1 {
+      font-size: 22px;
+      margin-top: 20px; } }
+  @media screen and (max-width: 420px) {
+    .block_description h2, .block_description h1 {
+      font-size: 20px; } }
 
 .block_description {
   padding: 40px 50px;
-  text-align: center; }
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column; }
+  @media screen and (max-width: 563px) {
+    .block_description {
+      padding: 10px 25px; } }
   .block_description__info {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -543,23 +627,34 @@ body {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center; }
+    @media screen and (max-width: 870px) {
+      .block_description__info {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column; } }
   .block_description__text {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
     color: white; }
+    @media screen and (max-width: 870px) {
+      .block_description__text {
+        margin-top: 30px; } }
 
 .block_description span {
   padding: 1% 0 1% 8%;
   text-align: justify;
   text-indent: 2em; }
-  @media screen and (max-width: 1230px) {
+  @media screen and (max-width: 870px) {
     .block_description span {
+      padding: 1% 0;
       font-size: 14px; } }
+  @media screen and (max-width: 1050px) {
+    .block_description span {
+      font-size: 13px; } }
 
 .page_service h2, .page_about h1 {
   text-transform: uppercase;
@@ -568,12 +663,17 @@ body {
 
 .page_about img {
   width: 40%; }
+  @media screen and (max-width: 870px) {
+    .page_about img {
+      width: 50%; } }
+  @media screen and (max-width: 563px) {
+    .page_about img {
+      width: 85%; } }
 
 /* услуги на главной*/
 .services_main {
   width: 60%;
   margin: 0 auto;
-  height: inherit;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -693,7 +793,7 @@ body {
       margin-left: 5%; } }
   @media screen and (max-width: 420px) {
     .footer_menu {
-      margin-left: 0; } }
+      margin-left: 3%; } }
 
 .footer_menu li {
   list-style: none;
@@ -786,7 +886,7 @@ body {
   line-height: 40px; }
   @media screen and (max-width: 563px) {
     .footer_find {
-      margin-left: 0;
+      margin-left: 13px;
       height: 30px;
       display: -webkit-box;
       display: -ms-flexbox;
@@ -795,36 +895,9 @@ body {
       -ms-flex-pack: center;
       justify-content: center;
       margin-top: -200px; } }
-  .footer_find.main {
-    display: none; }
-    @media screen and (max-width: 563px) {
-      .footer_find.main {
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        width: 90%;
-        -webkit-box-pack: center;
-        -ms-flex-pack: center;
-        justify-content: center;
-        padding: 20px;
-        -webkit-box-align: center;
-        -ms-flex-align: center;
-        align-items: center;
-        position: absolute;
-        margin-top: 0;
-        top: 180px; }
-        .footer_find.main input[type="text"] {
-          font-size: 16px;
-          margin-right: 10px;
-          width: 230px;
-          height: 26px; } }
-    @media screen and (max-width: 420px) {
-      .footer_find.main {
-        padding: 20px 10px; }
-        .footer_find.main input[type="text"] {
-          font-size: 14px;
-          margin-right: 0;
-          width: 150px; } }
+  @media screen and (max-width: 420px) {
+    .footer_find {
+      margin-left: 2px; } }
 
 .footer_find input[type="text"] {
   width: 25vw;
@@ -839,19 +912,20 @@ body {
       font-size: 1em; } }
   @media screen and (max-width: 870px) {
     .footer_find input[type="text"] {
-      height: 26px; } }
+      height: 26px;
+      border-radius: 6px; } }
   @media screen and (max-width: 750px) {
     .footer_find input[type="text"] {
-      margin-right: 5px; } }
+      margin-right: 0px; } }
   @media screen and (max-width: 563px) {
     .footer_find input[type="text"] {
-      width: 60vw;
-      height: 26px; } }
+      width: 83vw;
+      height: 27px; } }
   @media screen and (max-width: 420px) {
     .footer_find input[type="text"] {
-      margin-right: 10px;
+      margin-right: 0;
       font-size: 14px;
-      width: 170px; } }
+      width: 82vw; } }
 
 .footer_find .btn {
   background: url("..//images/find.png") no-repeat;
@@ -862,11 +936,21 @@ body {
   @media screen and (max-width: 870px) {
     .footer_find .btn {
       background: url("..//images/find_320.png") center center no-repeat; } }
+  @media screen and (max-width: 563px) {
+    .footer_find .btn {
+      width: 32px;
+      height: 22px;
+      margin-left: -38px; } }
 
 .footer_find .btn:hover {
   -webkit-transform: scale(1.1);
   -ms-transform: scale(1.1);
   transform: scale(1.1); }
+  @media screen and (max-width: 563px) {
+    .footer_find .btn:hover {
+      -webkit-transform: none;
+      -ms-transform: none;
+      transform: none; } }
 
 @media screen and (max-width: 563px) {
   .footer_icon_menu {
