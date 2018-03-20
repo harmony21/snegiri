@@ -367,14 +367,17 @@ body {
 }
 
 .top_menu__item:hover .inside_menu {
-    display: block;
+    opacity: 1;
+    visibility: visible;
     @include phones {
-        display: none;
+        transition-delay: 0.8s;
+        
     }
 }
 .top_menu__link:hover {
-    color: #007cc5; 
+    color: #007cc5;  
 }
+
 .inside_menu__wrap {
     list-style: none;
     @include phones {
@@ -386,7 +389,11 @@ body {
 .inside_menu {
     width: 143%;
     position: absolute; 
-    display: none; 
+    opacity: 0;
+    visibility: hidden;
+    transition-property: opacity, visibility;
+    transition-duration: 0.3s, 0.3s;
+    transition-delay: .15s, .15s;
     z-index: 1; 
     background-color: #1a1c21; 
     text-align: left; 
