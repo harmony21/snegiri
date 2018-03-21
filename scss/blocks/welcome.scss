@@ -17,7 +17,6 @@ body {
     }
     @include phones {
         height: 823px;
-        transition: 0.3s;
     }
 }
 .page_service {
@@ -274,7 +273,6 @@ body {
     font-size: 1.3em; 
     line-height: 90px; 
     &.active {
-        height: 356px;
         .top_menu {
             display: block;
         }       
@@ -291,7 +289,6 @@ body {
     @include phones {
         justify-content: flex-end;
         flex-direction: column;
-        // height: 356px;
         line-height: 55px;
     }
 }
@@ -303,8 +300,6 @@ body {
         display: flex;
         justify-content: center;
         padding: 0 20px;
-        // padding: 5px 40vw;
-        // border: 1px solid white;
     }
 }
 .top_menu {
@@ -366,14 +361,12 @@ body {
     }
 }
 
-.top_menu__item:hover .inside_menu {
-    opacity: 1;
-    visibility: visible;
-    @include phones {
-        transition-delay: 0.8s;
-        
+@media screen and (min-width: 564px) {
+    .top_menu__item:hover .inside_menu {
+        display: block;
     }
 }
+
 .top_menu__link:hover {
     color: #007cc5;  
 }
@@ -381,7 +374,7 @@ body {
 .inside_menu__wrap {
     list-style: none;
     @include phones {
-        transition: .4s;
+        transition: .5s;
         overflow: hidden;
         height: 0;
     }
@@ -389,11 +382,7 @@ body {
 .inside_menu {
     width: 143%;
     position: absolute; 
-    opacity: 0;
-    visibility: hidden;
-    transition-property: opacity, visibility;
-    transition-duration: 0.3s, 0.3s;
-    transition-delay: .15s, .15s;
+    display: none;
     z-index: 1; 
     background-color: #1a1c21; 
     text-align: left; 
@@ -415,6 +404,7 @@ body {
     @include phones {
         font-size: 12px;
         width: 100%;
+        background-color: lighten(#1a1c21, 2);
     }
 } 
 .top_menu li > div > ul > li {
@@ -480,10 +470,6 @@ body {
     width: 100%; 
     height: 603px; 
     position: relative; 
-    // @include phones {
-    //     height: 0; 
-    //     display: none;
-    // }
 }
 .slide img {
     height: 100%;
