@@ -37,7 +37,8 @@ $(document).ready(function() {
                 verItems.removeClass('active');
                 verItem.addClass('active');
 
-                verContents.css ('height', 0);
+                // verContents.css ('height', 0);
+                verContents.animate({height: 0}, 400);
                 verContent.animate({height: maxHeight}, 500);
             
                 $('.menu_wrapper').animate({height: 532}, 500);
@@ -62,6 +63,7 @@ $(window).resize(function() {
         if ($(window).width() >= 890) { 
             $('.page_top').css("height", "913px");
             $('.menu_wrapper').css('height', '90px');
+            $(".top_menu__item").removeClass('active');
         }
         if ($(window).width() <= 563) {
             $('.page_top').css("height", "823px");
