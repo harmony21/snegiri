@@ -345,6 +345,7 @@ body {
         }
         .inside_menu {
             display: block;
+            // visibility: visible;
         }
         .top_menu > li:hover .inside_menu {
             @include phones {
@@ -374,14 +375,15 @@ body {
 .inside_menu__wrap {
     list-style: none;
     @include phones {
-        transition: .5s;
+        // transition: .5s;
         overflow: hidden;
         height: 0;
     }
 }
 .inside_menu {
     width: 143%;
-    position: absolute; 
+    position: absolute;
+    // visibility: hidden; 
     display: none;
     z-index: 1; 
     background-color: #1a1c21; 

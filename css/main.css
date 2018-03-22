@@ -406,9 +406,6 @@ body {
   list-style: none; }
   @media screen and (max-width: 563px) {
     .inside_menu__wrap {
-      -webkit-transition: .5s;
-      -o-transition: .5s;
-      transition: .5s;
       overflow: hidden;
       height: 0; } }
 
