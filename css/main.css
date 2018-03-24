@@ -25,7 +25,7 @@ body {
       height: 853px; } }
   @media screen and (max-width: 563px) {
     .page_top {
-      height: 823px; } }
+      height: 565px; } }
 
 .page_service {
   background-color: #007cc5; }
@@ -347,7 +347,9 @@ body {
 
 @media screen and (max-width: 563px) {
   .top_menu {
-    display: none; } }
+    position: absolute;
+    display: none;
+    width: 100%; } }
 
 .top_menu > li {
   float: left;
@@ -410,7 +412,7 @@ body {
       height: 0; } }
 
 .inside_menu {
-  width: 143%;
+  width: 160%;
   position: absolute;
   display: none;
   z-index: 1;
@@ -423,14 +425,14 @@ body {
   @media screen and (max-width: 1366px) {
     .inside_menu {
       font-size: 14px;
-      width: 133%; } }
+      width: 148%; } }
   @media screen and (max-width: 1230px) {
     .inside_menu {
-      width: 140%; } }
+      width: 152%; } }
   @media screen and (max-width: 870px) {
     .inside_menu {
       font-size: 10.5px;
-      width: 115%; } }
+      width: 126%; } }
   @media screen and (max-width: 563px) {
     .inside_menu {
       font-size: 12px;
@@ -458,13 +460,16 @@ body {
   display: block;
   width: 100%;
   height: 100%;
-  padding: 0 0.6em; }
+  padding: 0 22px; }
+  @media screen and (max-width: 1366px) {
+    .top_menu li > div > ul > li a {
+      padding: 0 18px; } }
   @media screen and (max-width: 1230px) {
     .top_menu li > div > ul > li a {
-      padding: 0 0.4em; } }
+      padding: 0 13px; } }
   @media screen and (max-width: 870px) {
     .top_menu li > div > ul > li a {
-      padding: 0 0.6em 0 0.4em; } }
+      padding: 0 10px; } }
   @media screen and (max-width: 563px) {
     .top_menu li > div > ul > li a {
       width: 95%;
@@ -503,24 +508,28 @@ body {
   width: 100%;
   height: 603px;
   position: relative; }
-
-.slide img {
-  height: 100%;
-  width: 100%; }
+  @media screen and (max-width: 563px) {
+    .slider_wrapper {
+      height: 345px; } }
 
 .slide {
-  position: absolute;
   width: 100%;
   height: 100%; }
 
 .slide1 {
-  background: url("..//images/slide1.jpg") center center no-repeat; }
+  background-image: url("..//images/slide1.jpg");
+  background-size: cover;
+  background-position: center center; }
 
 .slide2 {
-  background: url("..//images/slide2.jpg") no-repeat; }
+  background-image: url("..//images/slide2.jpg");
+  background-size: cover;
+  background-position: center center; }
 
 .slide3 {
-  background: url("..//images/slide3.jpg") center center no-repeat; }
+  background-image: url("..//images/slide3.jpg");
+  background-size: cover;
+  background-position: center center; }
 
 .slide p {
   position: absolute;
@@ -535,13 +544,11 @@ body {
       font-size: 1.2em; } }
   @media screen and (max-width: 563px) {
     .slide p {
-      left: 20%;
-      width: 58%;
+      left: 2%;
+      width: 94%;
       font-size: 15px; } }
   @media screen and (max-width: 420px) {
     .slide p {
-      left: 20%;
-      width: 58%;
       font-size: 13px; } }
 
 .slide a {
@@ -583,6 +590,9 @@ body {
   text-indent: -9999px;
   font-size: 0px;
   background: url("..//images/radiobg.png") center bottom no-repeat; }
+  @media screen and (max-width: 563px) {
+    .control-slide {
+      margin-top: 20px; } }
 
 .control-slide:hover {
   cursor: pointer;
