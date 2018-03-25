@@ -27,7 +27,7 @@ $(document).ready(function() {
     });
 
     //подменю в мобильной версии
-    $(".top_menu__item").on('click', function (ev) {
+    $(".inside").on('click', function (ev) {
         ev.preventDefault;
 
         if ($(window).width() < 564) {
