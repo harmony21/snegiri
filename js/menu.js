@@ -52,7 +52,7 @@ $(document).ready(function() {
                 else {
                     verItem.removeClass('active'); 
                     verContent.animate({height: 0}, 400);
-                    $('.menu_wrapper').animate({height: 356}, 400),
+                    $('.menu_wrapper').animate({height: 356}, 400);
                     $('.page_top').css('height', '831px');     
                 }     
             } 
