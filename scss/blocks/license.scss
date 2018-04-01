@@ -49,12 +49,12 @@ body {
     position: relative;
 }
 .page_top {
-    @include min-tablets {
-        height: 853px;
-    }
-    @include phones {
-        height: 565px;
-    }
+    // @include min-tablets {
+    //     height: 853px;
+    // }
+    // @include phones {
+    //     height: 565px;
+    // }
 }
 .page_bottom {
     height: 350px; 
@@ -208,9 +208,9 @@ body {
         background: url("..//images/zapis_3.png");
         width: 35px;
         height: 25px;
-        @include phones {
-            background: url("..//images/zapis1.png");
-        }
+        // @include phones {
+        //     background: url("..//images/zapis1.png");
+        // }
     }
     &:hover {
         .button__pic {
@@ -264,15 +264,15 @@ body {
         margin-left: 20px; 
         padding-left: 50px; 
         background: url('..//images/zapis.png') no-repeat left;
-        @include min-tablets {
-            font-size: 12px;
-            padding-left: 60px; 
-        }
-        @media screen and (max-width: 650px) {
-            font-size: 11px;
-            background: url('..//images/zapis_320.png') no-repeat left;
-            padding-left: 40px;
-        }
+        // @include min-tablets {
+        //     font-size: 12px;
+        //     padding-left: 60px; 
+        // }
+        // @media screen and (max-width: 650px) {
+        //     font-size: 11px;
+        //     background: url('..//images/zapis_320.png') no-repeat left;
+        //     padding-left: 40px;
+        // }
     }
 }
 /* верхнее меню */
@@ -391,7 +391,6 @@ body {
         color: #007cc5;
     }
 }
-
 .inside_menu__wrap {
     list-style: none;
     @include phones {
@@ -488,132 +487,56 @@ body {
         padding: 0;
     }
 }
-.mission {
-    width: 730px;
-    margin: 0 auto;
-    &__title {
-        text-transform: uppercase;
-        font-size: 21px;
-        text-align: center;
+.wrap {
+    background: #e5e5e5;
+}
+.cookies {
+    margin: 50px auto;
+    font-size: 13px;
+    text-transform: uppercase;
+    width: 100%;
+    span {
+        margin-right: 10px;
+    }
+    span:last-child {
         color: #ec1551;
+    }
+}
+.license {
+    width: 737px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &__title {
+        font-size: 20px;
+        text-transform: uppercase;
         font-weight: normal;
+        margin-bottom: 40px;
     }
-    &__slogan {
-        font-weight: bold;
-    }
-    p, ul {
-        margin-top: 22px;
-        font-size: 17px;
-    }
-    ul {
-        list-style: none;
-        margin-left: 60px;
-    }
-    &__documents {
-        margin: 100px auto 70px auto;
-        align-items: center;
+    &__doc {
         display: flex;
-        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 70px;
+        margin-top: 50px;
     }
-    &__agree, &__position {
-        text-align: center;
-        font-size: 15px;
-        padding-left: 90px;
+    &__desc {
+        margin-left: 15px;
+        font-size: 12px;
+    }
+    &__link {
+        display: flex;
+        align-items: center;
+        margin-top: 5px;
         a {
-            color: black;
+            margin-left: 8px;
+            color: #ec1551;
             text-decoration: none;
-            text-align: left;
             &:hover {
                 text-decoration: underline;
             }
         }
     }
-}
-.cookies {
-    margin: 50px auto;
-        font-size: 13px;
-        text-transform: uppercase;
-        span {
-            margin-right: 10px;
-        }
-        span:last-child {
-            color: #ec1551;
-        }
-}
-//треугольники слева
-.triangles_left {
-    position: absolute; 
-    top: 301px; 
-    left: 0; 
-}
-.left_top {
-    overflow: hidden; 
-    position: relative;	
-    width: 624px; 
-    height: 404px; 
-    background: url('..//images/eye.png') no-repeat;
-}
-.triangle_red_1, .triangle_red_2 {
-    width: 227px; 
-    height: 215px;	
-    background-color: #ee4122;
-}
-.triangle_red_1 {	
-    position: absolute; 
-    bottom:0; 
-    left:0; 
-    background: linear-gradient(-135deg, transparent 161px, #ee4122 0);
-}
-.triangle_red_2 {
-    background:linear-gradient(-45deg, transparent 161px, #ee4122 0);
-}
-.left_middle {
-    width: 663px;
-    height: 448px;
-    background-color: #f5821f;
-}
-.left_middle {
-    background:linear-gradient(-135deg, transparent 317px, #f5821f 0);
-}
-
-//треугольники справа
-.triangles_right {
-    position: absolute; 
-    top: 301px; 
-    right: 0; 
-}
-.right_top { 
-    width: 600px; 
-    height: 504px; 
-    background-color: #00b6bc; 
-    background:linear-gradient(45deg, transparent 384px, #00b6bc 0); 
-}
-.triangle_blue_1, .triangle_blue_2 {
-    width: 149px; 
-    height: 196px;	
-    background-color: #005382; 
-    position: absolute; 
-    right: 0;
-}
-.triangle_blue_1 { 
-    background:linear-gradient(135deg, transparent 140px, #005382 0); 
-    top: 218px;
-}
-.triangle_blue_2 {
-    background:linear-gradient(45deg, transparent 140px, #005382 0); 
-    top: 0;
-}
-.right_middle {
-    width: 691px;
-    height: 538px;
-    background-color: #007cc5; 
-    position: absolute; 
-    top: 414px; 
-    right: 0;
-    z-index: 1;
-}
-.right_middle {
-    background:linear-gradient(135deg, transparent 384px, #007cc5 0);
 }
 /* подвал */
 .back_triangles {

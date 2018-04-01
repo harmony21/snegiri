@@ -1,7 +1,7 @@
 @charset "UTF-8";
 .form {
   position: absolute;
-  top: 186px;
+  top: 140px;
   width: 800px;
   background: white;
   padding: 0 0 35px 0;
@@ -497,14 +497,6 @@ body {
 .mission {
   width: 730px;
   margin: 0 auto; }
-  .mission__way {
-    margin: 50px auto;
-    font-size: 13px;
-    text-transform: uppercase; }
-    .mission__way span {
-      margin-right: 10px; }
-    .mission__way span:last-child {
-      color: #ec1551; }
   .mission__title {
     text-transform: uppercase;
     font-size: 21px;
@@ -540,6 +532,15 @@ body {
       text-align: left; }
       .mission__agree a:hover, .mission__position a:hover {
         text-decoration: underline; }
+
+.cookies {
+  margin: 50px auto;
+  font-size: 13px;
+  text-transform: uppercase; }
+  .cookies span {
+    margin-right: 10px; }
+  .cookies span:last-child {
+    color: #ec1551; }
 
 .triangles_left {
   position: absolute;

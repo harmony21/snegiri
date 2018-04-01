@@ -5,7 +5,7 @@
         <title>Снегири - многопрофильный медицинский центр</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link href="..//css/mission.css" type="text/css" rel="stylesheet" />
+        <link href="..//css/vacancy.css" type="text/css" rel="stylesheet" />
     </head>
     <body>
         <div class="page_100 page_top">
@@ -60,59 +60,51 @@
             </div>
         </div>
         <div style="clear:both;"></div> 
-        <div class="triangles_left">
-                <div class="left_top">
-                    <div class="triangle_red_1"></div>
-                </div>
-                <div class="left_middle">
-                    <div class="triangle_red_2"></div>
-                </div>
-                <div class="left_bottom"></div>
-            </div>
+        <div class="triangle_left"></div>
 
-        <div class="mission">
+        <div class="vacancy">
             <div class="cookies">
                 <span>Главная</span>
                 <span>О центре</span>
-                <span>Миссия и ценности</span>
+                <span>Вакансии</span>
             </div>
-            <h1 class="mission__title">Миссия и ценности нашей клиники</h1>
-            <p class="mission__slogan">Доброе название поднимает настроение</p>
-            <p>Снегири - это новые отношения врача и пациента.</p>
-            <p>Наш врач берет на себя личную профессиональную ответственности за результат лечения:</p>
-            <ul>
-                <li>Назначаем только необходимое</li>
-                <li>Уделяем достаточно времени каждому</li>
-                <li>Комфортно и без очередей</li>
-                <li>Врачи с многолетней практикой</li>
-                <li>Оборудование экспертного класса</li>
-                <li>Процедуры максимально безболезнены и комфортны</li>
+            <h1 class="vacancy__title">Вакансии</h1>
+            <ul class="vacancy__list">
+                <li class="vacancy__item">Врач-ортодонт</li>
+                <li class="vacancy__item">Врач-кардиолог</li>
+                <li class="vacancy__item">Врач функциональной диагностики</li>
+                <li class="vacancy__item">Старший менеджер</li>
+                <li class="vacancy__item">Администратор</li>
             </ul>
-            <p class="mission__slogan">Один день - одна дверь</p>
-            <p>Все анализы, консультации узких специалистов, комплексную диагностику и лечение вы можете пройти
-                в одном месте. Самое ценное в лечении - это время. Без лишних действия и ожидания вы сдадите только
-                нужные анализы, и их результаты попадут сразу к вашему врачу - вы просто придете на прием, когда вам удобно.
-            </p>
-            <div class="mission__documents">
-                <div class="mission__agree">
-                    <a href=""><img src="..//images/doc.png" alt="">
-                    <p>Согласие на обработку персональных данных в ООО "Снегири"</p></a>
+            <p class="vacancy__mail">Резюме присылать на E-mail: <a href="mailto:post@snegirimed.ru">post@snegirimed.ru</a></p>
+            <h2 class="vacancy__offer">Хочу у вас работать:</h2>
+            <form action="" class="vacancy__form">
+                <div class="vacancy__left">
+                    <label for="employer-name">Как вас зовут *</label>
+                    <label for="employer-mail">Адрес электронной почты *</label>
+                    <label for="employer-resume">Прикрепите свое резюме</label>
+                    <p>Защита от автоматического заполнения</p>
+                    <label for="employer-protect">Введите слово с картинки *</label>
                 </div>
-                <div class="mission__position">
-                    <a href=""><img src="..//images/doc.png" alt="">
-                    <p>ПОЛОЖЕНИЕ по обработке и защите персональных данных в ООО "Снегири"</p></a>
+                <div class="vacancy__right">
+                    <input type="text" name="employer-name" pattern="[A-Za-zА-Яа-яЁё]{,30}">
+                    <input id="mail" type="email" name="employer-mail" pattern="^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$">
+                    <label for="" class="file-upload">
+                        <input type="file" name="employer-resume" onchange="getFileName();" id="uploaded-file">
+                        <span>Выберите файл</span>
+                    </label>
+                    <div id="file-name"></div>  
+                    <div class="vacancy__protect">
+                        <input type="text" name="employer-protect">
+                        <img src="..//images/captcha.png" alt="">
+                        <a href="">Обновить картинку</a>
+                    </div>
                 </div>
-            </div>
+                <button class="vacancy__submit">Отправить</button> 
+            </form>
         </div>
 
-        <div class="triangles_right">
-            <div class="right_top">
-                <div class="triangle_blue_1"></div>
-            </div>
-            <div class="right_middle">
-                <div class="triangle_blue_2"></div>
-            </div>
-        </div>
+        <div class="triangle_right"></div>
 
         <div class="page_100 page_bottom">
             <div class="footer_main">
@@ -194,6 +186,7 @@
         <script src="..//js/jquery-1.12.0.min.js"></script>
         <script src="..//js/slide.js"></script>
         <!-- <script src="..//js/menu.js"></script>     -->
-        <script src="..//js/form.js"></script>    	
+        <script src="..//js/form.js"></script> 
+        <script src="..//js/file.js"></script>    	
     </body>
 </html>
