@@ -1247,9 +1247,8 @@ a.q {
 
 .form {
   position: absolute;
-  top: 323px;
+  top: 186px;
   width: 800px;
-  z-index: 2;
   background: white;
   padding: 0 0 35px 0;
   display: -webkit-box;
@@ -1261,7 +1260,10 @@ a.q {
   flex-direction: column;
   left: 50%;
   margin-left: -400px;
-  display: none; }
+  display: none;
+  z-index: 3;
+  -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.8); }
   .form__top {
     background: #a6ce39;
     padding: 35px 60px;
@@ -1322,6 +1324,17 @@ a.q {
     -ms-flex-align: center;
     align-items: center;
     margin-left: 80px; }
+
+.wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: white;
+  opacity: 0.8;
+  display: none;
+  width: 100%;
+  height: 100%;
+  z-index: 2; }
 
 .form input, .form textarea {
   border: 2px solid #a6ce39;

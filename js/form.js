@@ -2,23 +2,30 @@ $(document).ready(function() {
 
     $('.zapis').on('click', function (ev) {
         ev.preventDefault;
-
-        $(".form").fadeIn();   
-        $(".wrap").animate({opacity: 0.5}, 400); 
+        $(".wrapper").fadeIn(400);
+        $(".form").fadeIn(400);   
     });
 
     $('.zapis--footer').on('click', function (ev) {
         ev.preventDefault;
         $(".form").fadeIn();   
-        $(".wrap").animate({opacity: 0.5}, 400); 
+        $(".wrapper").fadeIn(400); 
     });
 
     $('.form__close-btn').on('click', function (ev) {
         ev.preventDefault;
-        $(".form").fadeOut();   
-        $(".wrap").animate({opacity: 1}, 400);    
+        $(".form").fadeOut(400);   
+        $(".wrapper").fadeOut(400);
     });
 
+    $('.wrapper').on('click', function (ev) {
+        $(".form").fadeOut(400);   
+        $(".wrapper").fadeOut(500);
+    })
+
 });
+
+
+
 
 
