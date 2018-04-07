@@ -1,0 +1,118 @@
+//import
+@import "form";
+@import "config";
+@import "header";
+@import "menu";
+@import "footer";
+
+.cookies {
+    margin: 50px auto 20px auto;
+    font-size: 13px;
+    text-transform: uppercase;
+    width: 100%;
+    a {
+        margin-right: 10px;
+        text-decoration: none;
+        color: black;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+    a:last-child {
+        color: #ec1551;
+    }
+}
+.price {
+    background-color: #ee3267;
+    padding: 9px 35px;
+    font-size: 13px;
+    text-transform: uppercase;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    &:hover {
+        cursor: pointer;
+        box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    }  
+    a {
+        color: white;
+        text-decoration: none;
+    } 
+}
+.details {
+    width: 730px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &__options {
+        background-color: lighten(#262932, 5%);
+        ul {
+            width: 80vw;
+            list-style: none;
+            font-size: 15px;
+            padding: 15px 0;
+            display: flex;
+            flex-direction: column;
+            line-height: 1.5;
+            margin-left: 367px;
+            a {
+                color: #848484;
+                text-decoration: none;
+                &.active {
+                    color: #0475b9;
+                }
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+    &__title {
+        font-size: 17px;
+        margin-top: 20px;
+        display: flex;
+        align-self: flex-start;
+    }
+    &__desc {
+        margin-top: 25px;
+        font-size: 14px;
+        display: flex;
+        flex-direction: column;
+        align-self: flex-start;
+    }
+    &__name {
+        font-weight: bold;
+    }
+    &__item {
+        font-size: 14px;
+    }
+    &__bottom {
+        display: flex;
+        align-self: flex-start;
+        margin-top: 30px;
+        margin-bottom: 70px;
+        align-items: center;
+    }
+}
+.entry {
+    background-color: black;
+    border: none;
+    border-radius: 6px;
+    color: white;
+    text-transform: uppercase;
+    padding: 8px;
+    width: 120px;
+    margin-right: 50px;
+    &:hover {
+        cursor: pointer;
+        box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    }
+}
+.count {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 17px;
+}

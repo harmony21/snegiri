@@ -1,0 +1,37 @@
+//fonts
+@font-face {font-family: 'Gotham Pro'; src: url('fonts/9781.otf') format('otf');}
+
+//media
+@mixin laptop {
+    @media screen and (max-width: $laptop) {
+        @content;
+    }
+}
+@mixin tablets {
+    @media screen and (max-width: $tablets) {
+        @content;
+    }
+}
+@mixin min-tablets {
+    @media screen and (max-width: $min-tablets) {
+        @content;
+    }
+}
+@mixin phones {
+    @media screen and (max-width: $phones) {
+        @content;
+    }
+}
+@mixin min-phones {
+    @media screen and (max-width: $min-phones) {
+        @content;
+    }
+}
+
+//resolutions
+$desktop: 1920px;
+$laptop: 1366px;
+$tablets: 1230px;
+$min-tablets: 870px; 
+$phones: 563px;      
+$min-phones: 420px; 

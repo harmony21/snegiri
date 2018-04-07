@@ -12,6 +12,12 @@ $(document).ready(function() {
         $(".wrapper").fadeIn(400); 
     });
 
+    $('.entry').on('click', function (ev) {
+        ev.preventDefault;
+        $(".form").fadeIn();   
+        $(".wrapper").fadeIn(400); 
+    });
+
     $('.form__close-btn').on('click', function (ev) {
         ev.preventDefault;
         $(".form").fadeOut(400);   
