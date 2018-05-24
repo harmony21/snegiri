@@ -1,0 +1,437 @@
+.block__triangles_left {
+  position: absolute;
+  top: 548px;
+  left: 0; }
+  .block__triangles_left.tr-margin {
+    top: 310px; }
+    @media screen and (max-width: 1020px) {
+      .block__triangles_left.tr-margin {
+        display: none; } }
+  .block__triangles_left.tr-margin_1 {
+    top: 450px; }
+    @media screen and (max-width: 1257px) {
+      .block__triangles_left.tr-margin_1 {
+        top: 472px; } }
+    @media screen and (max-width: 1000px) {
+      .block__triangles_left.tr-margin_1 {
+        display: none; } }
+  @media screen and (max-width: 870px) {
+    .block__triangles_left {
+      top: 503px; } }
+
+.block__left_top {
+  overflow: hidden;
+  position: relative;
+  width: 568px;
+  height: 158px; }
+  .block__left_top.lightpurple {
+    background: -webkit-linear-gradient(135deg, transparent 290px, #8490c7 0);
+    background: -o-linear-gradient(135deg, transparent 290px, #8490c7 0);
+    background: linear-gradient(-45deg, transparent 290px, #8490c7 0); }
+  .block__left_top.yellow {
+    background: -webkit-linear-gradient(135deg, transparent 290px, #ffca05 0);
+    background: -o-linear-gradient(135deg, transparent 290px, #ffca05 0);
+    background: linear-gradient(-45deg, transparent 290px, #ffca05 0); }
+  .block__left_top.orange {
+    background: -webkit-linear-gradient(135deg, transparent 290px, #dc7d43 0);
+    background: -o-linear-gradient(135deg, transparent 290px, #dc7d43 0);
+    background: linear-gradient(-45deg, transparent 290px, #dc7d43 0); }
+  .block__left_top.pink {
+    background: -webkit-linear-gradient(135deg, transparent 290px, #d44d60 0);
+    background: -o-linear-gradient(135deg, transparent 290px, #d44d60 0);
+    background: linear-gradient(-45deg, transparent 290px, #d44d60 0); }
+  .block__left_top.purple {
+    background: -webkit-linear-gradient(135deg, transparent 290px, #a053a0 0);
+    background: -o-linear-gradient(135deg, transparent 290px, #a053a0 0);
+    background: linear-gradient(-45deg, transparent 290px, #a053a0 0); }
+  .block__left_top.red {
+    background: -webkit-linear-gradient(135deg, transparent 290px, #ee4122 0);
+    background: -o-linear-gradient(135deg, transparent 290px, #ee4122 0);
+    background: linear-gradient(-45deg, transparent 290px, #ee4122 0); }
+  @media screen and (max-width: 615px) {
+    .block__left_top {
+      display: none; } }
+
+.block__triangle_1, .block__triangle_2 {
+  width: 225px;
+  height: 225px; }
+  .block__triangle_1.purple, .block__triangle_2.purple {
+    background-color: #a053a0; }
+  .block__triangle_1.red, .block__triangle_2.red {
+    background-color: #ee4122; }
+  .block__triangle_1.orange, .block__triangle_2.orange {
+    background-color: #dc7d43; }
+  .block__triangle_1.pink, .block__triangle_2.pink {
+    background-color: #d44d60; }
+  .block__triangle_1.lightpurple, .block__triangle_2.lightpurple {
+    background-color: #8490c7; }
+  .block__triangle_1.yellow, .block__triangle_2.yellow {
+    background-color: #ffca05; }
+  @media screen and (max-width: 615px) {
+    .block__triangle_1, .block__triangle_2 {
+      display: none; } }
+
+.block__triangle_1 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  top: 0; }
+  .block__triangle_1.lightpurple {
+    background: -webkit-linear-gradient(225deg, transparent 160px, #8490c7 0);
+    background: -o-linear-gradient(225deg, transparent 160px, #8490c7 0);
+    background: linear-gradient(-135deg, transparent 160px, #8490c7 0); }
+  .block__triangle_1.yellow {
+    background: -webkit-linear-gradient(225deg, transparent 160px, #ffca05 0);
+    background: -o-linear-gradient(225deg, transparent 160px, #ffca05 0);
+    background: linear-gradient(-135deg, transparent 160px, #ffca05 0); }
+  .block__triangle_1.orange {
+    background: -webkit-linear-gradient(225deg, transparent 160px, #dc7d43 0);
+    background: -o-linear-gradient(225deg, transparent 160px, #dc7d43 0);
+    background: linear-gradient(-135deg, transparent 160px, #dc7d43 0); }
+  .block__triangle_1.pink {
+    background: -webkit-linear-gradient(225deg, transparent 160px, #d44d60 0);
+    background: -o-linear-gradient(225deg, transparent 160px, #d44d60 0);
+    background: linear-gradient(-135deg, transparent 160px, #d44d60 0); }
+  .block__triangle_1.purple {
+    background: -webkit-linear-gradient(225deg, transparent 160px, #a053a0 0);
+    background: -o-linear-gradient(225deg, transparent 160px, #a053a0 0);
+    background: linear-gradient(-135deg, transparent 160px, #a053a0 0); }
+  .block__triangle_1.red {
+    background: -webkit-linear-gradient(225deg, transparent 160px, #ee4122 0);
+    background: -o-linear-gradient(225deg, transparent 160px, #ee4122 0);
+    background: linear-gradient(-135deg, transparent 160px, #ee4122 0); }
+
+.block__triangle_2.lightpurple {
+  background: -webkit-linear-gradient(135deg, transparent 207px, #8490c7 0);
+  background: -o-linear-gradient(135deg, transparent 207px, #8490c7 0);
+  background: linear-gradient(-45deg, transparent 207px, #8490c7 0); }
+
+.block__triangle_2.yellow {
+  background: -webkit-linear-gradient(135deg, transparent 207px, #ffca05 0);
+  background: -o-linear-gradient(135deg, transparent 207px, #ffca05 0);
+  background: linear-gradient(-45deg, transparent 207px, #ffca05 0); }
+
+.block__triangle_2.orange {
+  background: -webkit-linear-gradient(135deg, transparent 207px, #dc7d43 0);
+  background: -o-linear-gradient(135deg, transparent 207px, #dc7d43 0);
+  background: linear-gradient(-45deg, transparent 207px, #dc7d43 0); }
+
+.block__triangle_2.pink {
+  background: -webkit-linear-gradient(135deg, transparent 207px, #d44d60 0);
+  background: -o-linear-gradient(135deg, transparent 207px, #d44d60 0);
+  background: linear-gradient(-45deg, transparent 207px, #d44d60 0); }
+
+.block__triangle_2.purple {
+  background: -webkit-linear-gradient(135deg, transparent 207px, #a053a0 0);
+  background: -o-linear-gradient(135deg, transparent 207px, #a053a0 0);
+  background: linear-gradient(-45deg, transparent 207px, #a053a0 0); }
+
+.block__triangle_2.red {
+  background: -webkit-linear-gradient(135deg, transparent 207px, #ee4122 0);
+  background: -o-linear-gradient(135deg, transparent 207px, #ee4122 0);
+  background: linear-gradient(-45deg, transparent 207px, #ee4122 0); }
+
+.block__bottom_dark {
+  position: absolute;
+  right: 0; }
+  .block__bottom_dark.blue {
+    background-color: #005382;
+    background: -webkit-linear-gradient(315deg, transparent 357px, #005382 0);
+    background: -o-linear-gradient(315deg, transparent 357px, #005382 0);
+    background: linear-gradient(135deg, transparent 357px, #005382 0); }
+  .block__bottom_dark.green {
+    background-color: #4b8c5b;
+    background: -webkit-linear-gradient(315deg, transparent 357px, #4b8c5b 0);
+    background: -o-linear-gradient(315deg, transparent 357px, #4b8c5b 0);
+    background: linear-gradient(135deg, transparent 357px, #4b8c5b 0); }
+
+.block__dark_1 {
+  width: 209px;
+  height: 209px;
+  bottom: 299px;
+  right: 0;
+  position: absolute; }
+  .block__dark_1.blue {
+    background: -webkit-linear-gradient(315deg, transparent 150px, #005382 0);
+    background: -o-linear-gradient(315deg, transparent 150px, #005382 0);
+    background: linear-gradient(135deg, transparent 150px, #005382 0); }
+  .block__dark_1.green {
+    background: -webkit-linear-gradient(315deg, transparent 150px, #4b8c5b 0);
+    background: -o-linear-gradient(315deg, transparent 150px, #4b8c5b 0);
+    background: linear-gradient(135deg, transparent 150px, #4b8c5b 0); }
+  @media screen and (max-width: 1366px) {
+    .block__dark_1 {
+      height: 105px; } }
+  @media screen and (max-width: 1230px) {
+    .block__dark_1 {
+      display: none; } }
+
+.block__dark_2 {
+  width: 209px;
+  height: 209px;
+  right: 0;
+  bottom: 90px;
+  position: absolute; }
+  .block__dark_2.blue {
+    background: -webkit-linear-gradient(45deg, transparent 150px, #005382 0);
+    background: -o-linear-gradient(45deg, transparent 150px, #005382 0);
+    background: linear-gradient(45deg, transparent 150px, #005382 0); }
+  .block__dark_2.green {
+    background: -webkit-linear-gradient(45deg, transparent 150px, #4b8c5b 0);
+    background: -o-linear-gradient(45deg, transparent 150px, #4b8c5b 0);
+    background: linear-gradient(45deg, transparent 150px, #4b8c5b 0); }
+  @media screen and (max-width: 1366px) {
+    .block__dark_2 {
+      width: 105px; } }
+  @media screen and (max-width: 1230px) {
+    .block__dark_2 {
+      display: none; } }
+
+.block__bottom_light {
+  position: absolute;
+  right: 0; }
+  .block__bottom_light.blue {
+    background-color: #007cc5;
+    background: -webkit-linear-gradient(315deg, transparent 357px, #007cc5 0);
+    background: -o-linear-gradient(315deg, transparent 357px, #007cc5 0);
+    background: linear-gradient(135deg, transparent 357px, #007cc5 0); }
+  .block__bottom_light.lightgreen {
+    background-color: #bfd452;
+    background: -webkit-linear-gradient(315deg, transparent 357px, #bfd452 0);
+    background: -o-linear-gradient(315deg, transparent 357px, #bfd452 0);
+    background: linear-gradient(135deg, transparent 357px, #bfd452 0); }
+  .block__bottom_light.salad {
+    background-color: #67b9ba;
+    background: -webkit-linear-gradient(315deg, transparent 357px, #67b9ba 0);
+    background: -o-linear-gradient(315deg, transparent 357px, #67b9ba 0);
+    background: linear-gradient(135deg, transparent 357px, #67b9ba 0); }
+  .block__bottom_light.green {
+    background-color: #6db468;
+    background: -webkit-linear-gradient(315deg, transparent 357px, #6db468 0);
+    background: -o-linear-gradient(315deg, transparent 357px, #6db468 0);
+    background: linear-gradient(135deg, transparent 357px, #6db468 0); }
+
+.block__light_1 {
+  width: 205px;
+  height: 619px;
+  bottom: -101px;
+  right: 0;
+  position: absolute; }
+  .block__light_1.blue {
+    background: -webkit-linear-gradient(225deg, transparent 300px, #007cc5 0);
+    background: -o-linear-gradient(225deg, transparent 300px, #007cc5 0);
+    background: linear-gradient(-135deg, transparent 300px, #007cc5 0); }
+  .block__light_1.lightgreen {
+    background: -webkit-linear-gradient(225deg, transparent 300px, #bfd452 0);
+    background: -o-linear-gradient(225deg, transparent 300px, #bfd452 0);
+    background: linear-gradient(-135deg, transparent 300px, #bfd452 0); }
+  .block__light_1.salad {
+    background: -webkit-linear-gradient(225deg, transparent 300px, #67b9ba 0);
+    background: -o-linear-gradient(225deg, transparent 300px, #67b9ba 0);
+    background: linear-gradient(-135deg, transparent 300px, #67b9ba 0); }
+  .block__light_1.green {
+    background: -webkit-linear-gradient(225deg, transparent 300px, #6db468 0);
+    background: -o-linear-gradient(225deg, transparent 300px, #6db468 0);
+    background: linear-gradient(-135deg, transparent 300px, #6db468 0); }
+  @media screen and (max-width: 1366px) {
+    .block__light_1 {
+      width: 101px;
+      height: 722px;
+      bottom: -100px; } }
+  @media screen and (max-width: 1230px) {
+    .block__light_1 {
+      display: none; } }
+
+.block__light_2 {
+  width: 411px;
+  height: 598px;
+  bottom: -111px;
+  right: 205px;
+  position: absolute; }
+  .block__light_2.blue {
+    background: -webkit-linear-gradient(315deg, transparent 423px, #007cc5 0);
+    background: -o-linear-gradient(315deg, transparent 423px, #007cc5 0);
+    background: linear-gradient(135deg, transparent 423px, #007cc5 0); }
+  .block__light_2.lightgreen {
+    background: -webkit-linear-gradient(315deg, transparent 423px, #bfd452 0);
+    background: -o-linear-gradient(315deg, transparent 423px, #bfd452 0);
+    background: linear-gradient(135deg, transparent 423px, #bfd452 0); }
+  .block__light_2.salad {
+    background: -webkit-linear-gradient(315deg, transparent 423px, #67b9ba 0);
+    background: -o-linear-gradient(315deg, transparent 423px, #67b9ba 0);
+    background: linear-gradient(135deg, transparent 423px, #67b9ba 0); }
+  .block__light_2.green {
+    background: -webkit-linear-gradient(315deg, transparent 423px, #6db468 0);
+    background: -o-linear-gradient(315deg, transparent 423px, #6db468 0);
+    background: linear-gradient(135deg, transparent 423px, #6db468 0); }
+  @media screen and (max-width: 1366px) {
+    .block__light_2 {
+      right: 101px; } }
+  @media screen and (max-width: 1230px) {
+    .block__light_2 {
+      right: 0;
+      width: 290px; } }
+  @media screen and (max-width: 615px) {
+    .block__light_2 {
+      display: none; } }
+
+@-moz-document url-prefix() {
+  .specialists .block__triangles_left.purple {
+    top: 552px; }
+    @media screen and (max-width: 870px) {
+      .specialists .block__triangles_left.purple {
+        top: 507px; } } }
+
+@media screen and (-ms-high-contrast: active) and (-ms-high-contrast: none) {
+  .specialists .block__triangles_left.purple {
+    top: 552px; } }
+  @media screen and (-ms-high-contrast: active) and (-ms-high-contrast: none) and (max-width: 870px) {
+    .specialists .block__triangles_left.purple {
+      top: 507px; } }
+
+@-moz-document url-prefix() {
+  .block__triangles_left.tr-margin_1 {
+    top: 453px; }
+    @media screen and (max-width: 1257px) {
+      .block__triangles_left.tr-margin_1 {
+        top: 475px; } }
+    @media screen and (max-width: 1000px) {
+      .block__triangles_left.tr-margin_1 {
+        display: none; } } }
+
+@media screen and (-ms-high-contrast: active) and (-ms-high-contrast: none) {
+  .block__triangles_left.tr-margin_1 {
+    top: 453px; } }
+  @media screen and (-ms-high-contrast: active) and (-ms-high-contrast: none) and (max-width: 1257px) {
+    .block__triangles_left.tr-margin_1 {
+      top: 475px; } }
+  @media screen and (-ms-high-contrast: active) and (-ms-high-contrast: none) and (max-width: 1000px) {
+    .block__triangles_left.tr-margin_1 {
+      display: none; } }
+
+.contacts__middle_triangle {
+  position: absolute;
+  left: 0;
+  width: 713px;
+  height: 462px;
+  background-color: #a6ce39;
+  background: -webkit-linear-gradient(225deg, transparent 327px, #a6ce39 0);
+  background: -o-linear-gradient(225deg, transparent 327px, #a6ce39 0);
+  background: linear-gradient(-135deg, transparent 327px, #a6ce39 0); }
+  @media screen and (max-width: 1650px) {
+    .contacts__middle_triangle {
+      width: 545px; } }
+  @media screen and (max-width: 1366px) {
+    .contacts__middle_triangle {
+      width: 417px; } }
+  @media screen and (max-width: 1230px) {
+    .contacts__middle_triangle {
+      width: 270px; } }
+  @media screen and (max-width: 870px) {
+    .contacts__middle_triangle {
+      width: 185px; } }
+  @media screen and (max-width: 590px) {
+    .contacts__middle_triangle {
+      display: none; } }
+
+.contacts__triangles_right {
+  position: absolute;
+  top: 0;
+  right: 0; }
+
+.contacts__right_darkblue {
+  position: absolute;
+  top: 253px;
+  right: 0;
+  width: 427px;
+  height: 525px;
+  background-color: #005382;
+  background: -webkit-linear-gradient(315deg, transparent 367px, #005382 0);
+  background: -o-linear-gradient(315deg, transparent 367px, #005382 0);
+  background: linear-gradient(135deg, transparent 367px, #005382 0); }
+  @media screen and (max-width: 1650px) {
+    .contacts__right_darkblue {
+      width: 253px; } }
+  @media screen and (max-width: 1366px) {
+    .contacts__right_darkblue {
+      width: 170px; } }
+  @media screen and (max-width: 1230px) {
+    .contacts__right_darkblue {
+      display: none; } }
+
+.contacts__right_lightblue {
+  position: absolute;
+  top: 215px;
+  right: 0;
+  background-color: #00b6bc;
+  background: -webkit-linear-gradient(315deg, transparent 357px, #00b6bc 0);
+  background: -o-linear-gradient(315deg, transparent 357px, #00b6bc 0);
+  background: linear-gradient(135deg, transparent 357px, #00b6bc 0); }
+
+.contacts__lightblue_1 {
+  width: 421px;
+  height: 518px;
+  top: 310px;
+  right: 0;
+  position: absolute;
+  background: -webkit-linear-gradient(135deg, transparent 341px, #00b6bc 0);
+  background: -o-linear-gradient(135deg, transparent 341px, #00b6bc 0);
+  background: linear-gradient(-45deg, transparent 341px, #00b6bc 0); }
+  @media screen and (max-width: 1650px) {
+    .contacts__lightblue_1 {
+      width: 233px;
+      background: -webkit-linear-gradient(135deg, transparent 208px, #00b6bc 0);
+      background: -o-linear-gradient(135deg, transparent 208px, #00b6bc 0);
+      background: linear-gradient(-45deg, transparent 208px, #00b6bc 0); } }
+  @media screen and (max-width: 1366px) {
+    .contacts__lightblue_1 {
+      width: 170px;
+      height: 626px;
+      background: -webkit-linear-gradient(135deg, transparent 236px, #00b6bc 0);
+      background: -o-linear-gradient(135deg, transparent 236px, #00b6bc 0);
+      background: linear-gradient(-45deg, transparent 236px, #00b6bc 0); } }
+  @media screen and (max-width: 1230px) {
+    .contacts__lightblue_1 {
+      display: none; } }
+
+.contacts__lightblue_2 {
+  width: 498px;
+  height: 465px;
+  top: 310px;
+  position: absolute;
+  right: 421px;
+  background: -webkit-linear-gradient(45deg, transparent 352px, #00b6bc 0);
+  background: -o-linear-gradient(45deg, transparent 352px, #00b6bc 0);
+  background: linear-gradient(45deg, transparent 352px, #00b6bc 0); }
+  @media screen and (max-width: 1650px) {
+    .contacts__lightblue_2 {
+      right: 233px; } }
+  @media screen and (max-width: 1366px) {
+    .contacts__lightblue_2 {
+      width: 470px;
+      height: 591px;
+      right: 170px;
+      background: -webkit-linear-gradient(45deg, transparent 423px, #00b6bc 0);
+      background: -o-linear-gradient(45deg, transparent 423px, #00b6bc 0);
+      background: linear-gradient(45deg, transparent 423px, #00b6bc 0); } }
+  @media screen and (max-width: 1230px) {
+    .contacts__lightblue_2 {
+      right: 0; } }
+  @media screen and (max-width: 870px) {
+    .contacts__lightblue_2 {
+      top: 265px;
+      width: 295px; } }
+  @media screen and (max-width: 590px) {
+    .contacts__lightblue_2 {
+      display: none; } }
+
+@-moz-document url-prefix() {
+  @media screen and (max-width: 1650px) {
+    .contacts__right_darkblue {
+      width: 238px; } }
+  @media screen and (max-width: 1366px) {
+    .contacts__right_darkblue {
+      width: 170px; } }
+  @media screen and (max-width: 1230px) {
+    .contacts__right_darkblue {
+      display: none; } } }

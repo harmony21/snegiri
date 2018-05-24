@@ -1,0 +1,459 @@
+//resolutions
+$desktop: 1920px;
+$laptop: 1366px;
+$tablets: 1230px;
+$min-tablets: 870px; 
+$phones: 590px;      
+$min-phones: 420px;  
+
+//configuration
+@mixin laptop {
+    @media screen and (max-width: $laptop) {
+        @content;
+    }
+}
+@mixin tablets {
+    @media screen and (max-width: $tablets) {
+        @content;
+    }
+}
+@mixin min-tablets {
+    @media screen and (max-width: $min-tablets) {
+        @content;
+    }
+}
+@mixin phones {
+    @media screen and (max-width: $phones) {
+        @content;
+    }
+}
+@mixin min-phones {
+    @media screen and (max-width: $min-phones) {
+        @content;
+    }
+}
+//треугольники слева
+.block {
+    &__triangles_left {
+        position: absolute; 
+        top: 548px; 
+        left: 0; 
+        &.tr-margin {
+            top: 310px; 
+            @media screen and (max-width: 1020px) {
+                display: none;
+            } 
+        }
+        &.tr-margin_1 {
+            top: 450px;
+            @media screen and (max-width: 1257px) {
+                top: 472px;
+            }
+            @media screen and (max-width: 1000px) {
+                display: none;
+            }
+        }
+        @include min-tablets {
+            top: 503px;
+        }
+    }
+    &__left_top {
+        overflow: hidden; 
+        position: relative;	
+        width: 568px; 
+        height: 158px; 
+        &.lightpurple {
+            background: linear-gradient(-45deg, transparent 290px, #8490c7 0);
+        }
+        &.yellow {
+            background: linear-gradient(-45deg, transparent 290px, #ffca05 0);
+        }
+        &.orange {
+            background: linear-gradient(-45deg, transparent 290px, #dc7d43 0);
+        }
+        &.pink {
+            background: linear-gradient(-45deg, transparent 290px, #d44d60 0);
+        }
+        &.purple {
+            background: linear-gradient(-45deg, transparent 290px, #a053a0 0);
+        } 
+        &.red {
+            background: linear-gradient(-45deg, transparent 290px, #ee4122 0);
+        } 
+        @media screen and (max-width: 615px) {
+            display: none;
+        }
+    }
+    &__triangle_1, &__triangle_2 {
+        width: 225px; 
+        height: 225px;
+        &.purple  {
+            background-color: #a053a0;
+        }	
+        &.red {
+            background-color: #ee4122;
+        }
+        &.orange  {
+            background-color: #dc7d43;
+        }
+        &.pink {
+            background-color: #d44d60;
+        }
+        &.lightpurple {
+            background-color: #8490c7;
+        }
+        &.yellow {
+            background-color: #ffca05;
+        }
+        @media screen and (max-width: 615px) {
+            display: none;
+        }
+    }
+    &__triangle_1 {	
+        position: absolute; 
+        bottom:0; 
+        left:0; 
+        top: 0;
+        &.lightpurple {
+            background: linear-gradient(-135deg, transparent 160px, #8490c7 0);
+        }
+        &.yellow {
+            background: linear-gradient(-135deg, transparent 160px, #ffca05 0);
+        }
+        &.orange {
+            background: linear-gradient(-135deg, transparent 160px, #dc7d43 0);
+        }
+        &.pink {
+            background: linear-gradient(-135deg, transparent 160px, #d44d60 0);
+        }
+        &.purple {
+            background: linear-gradient(-135deg, transparent 160px, #a053a0 0);
+        } 
+        &.red {
+            background: linear-gradient(-135deg, transparent 160px, #ee4122 0);
+        } 
+    }
+    &__triangle_2 {
+       &.lightpurple {
+            background: linear-gradient(-45deg, transparent 207px, #8490c7 0);
+        }
+        &.yellow {
+            background: linear-gradient(-45deg, transparent 207px, #ffca05 0);
+        }
+        &.orange {
+            background: linear-gradient(-45deg, transparent 207px, #dc7d43 0);
+        }
+        &.pink {
+            background: linear-gradient(-45deg, transparent 207px, #d44d60 0);
+        }
+        &.purple {
+            background: linear-gradient(-45deg, transparent 207px, #a053a0 0);
+        } 
+        &.red {
+            background: linear-gradient(-45deg, transparent 207px, #ee4122 0);
+        } 
+        
+    }
+    //треугольники справа
+    &__bottom_dark {
+        position: absolute;
+        right: 0;
+        &.blue {
+            background-color: #005382; 
+            background:linear-gradient(135deg, transparent 357px, #005382 0);
+        }
+        &.green {
+            background-color: #4b8c5b; 
+            background:linear-gradient(135deg, transparent 357px, #4b8c5b 0);
+        }
+        
+    }
+    &__dark_1 {
+        width: 209px;
+        height: 209px;
+        bottom: 299px;
+        right: 0;
+        position: absolute;
+        &.blue {
+            background:linear-gradient(135deg, transparent 150px, #005382 0); 
+        }
+        &.green {
+            background:linear-gradient(135deg, transparent 150px, #4b8c5b 0); 
+        }
+        @include laptop {
+            height: 105px;
+        }
+        @include tablets {
+            display: none;
+        }
+    }
+    &__dark_2 {
+        width: 209px;
+        height: 209px;
+        right: 0;
+        bottom: 90px;
+        position: absolute;
+        &.blue {
+            background:linear-gradient(45deg, transparent 150px, #005382 0); 
+        }
+        &.green  {
+            background:linear-gradient(45deg, transparent 150px, #4b8c5b 0); 
+        }
+        @include laptop {
+            width: 105px;
+        }
+        @include tablets {
+            display: none;
+        }
+    }
+    &__bottom_light {
+        position: absolute;
+        right: 0;
+        &.blue {
+            background-color: #007cc5; 
+            background:linear-gradient(135deg, transparent 357px, #007cc5 0);
+        }
+        &.lightgreen  {
+            background-color: #bfd452; 
+            background:linear-gradient(135deg, transparent 357px, #bfd452 0);
+        }
+        &.salad {
+            background-color: #67b9ba;
+            background:linear-gradient(135deg, transparent 357px, #67b9ba 0);
+        }
+        &.green {
+            background-color: #6db468;
+            background:linear-gradient(135deg, transparent 357px, #6db468 0);
+        }
+    }
+    &__light_1 {
+        width: 205px;
+        height: 619px;
+        bottom: -101px;
+        right: 0;
+        position: absolute;
+        &.blue {
+            background:linear-gradient(-135deg, transparent 300px, #007cc5 0); 
+        }
+        &.lightgreen  {
+            background:linear-gradient(-135deg, transparent 300px, #bfd452 0); 
+        }
+        &.salad {
+            background:linear-gradient(-135deg, transparent 300px, #67b9ba 0);
+        }
+        &.green {
+            background:linear-gradient(-135deg, transparent 300px, #6db468 0);
+        }
+        @include laptop {
+            width: 101px;
+            height: 722px;
+            bottom: -100px;
+        }
+        @include tablets {
+            display: none;
+        }
+    }
+    &__light_2 {
+        width: 411px;
+        height: 598px;
+        bottom: -111px;
+        right: 205px;
+        position: absolute;
+        &.blue {
+            background:linear-gradient(135deg, transparent 423px, #007cc5 0); 
+        }
+        &.lightgreen  {
+            background:linear-gradient(135deg, transparent 423px, #bfd452 0); 
+        }
+        &.salad {
+            background:linear-gradient(135deg, transparent 423px, #67b9ba 0);
+        }
+        &.green {
+            background:linear-gradient(135deg, transparent 423px, #6db468 0);
+        }
+        @include laptop {
+            right: 101px;
+        }
+        @include tablets {
+            right: 0;
+            width: 290px;
+        }
+        @media screen and (max-width: 615px) {
+            display: none;
+        }
+    }
+}
+//стили только для Firefox (страница Врачи)
+@-moz-document url-prefix() {
+    .specialists {
+        .block__triangles_left {
+            &.purple {
+                top: 552px;
+                @include min-tablets {
+                    top: 507px;
+                }
+            }
+        }
+    }
+}
+//стили для IE (страница Врачи)
+@media screen and (-ms-high-contrast: active) and (-ms-high-contrast: none) {
+    .specialists {
+        .block__triangles_left {
+            &.purple {
+                top: 552px;
+                @include min-tablets {
+                    top: 507px;
+                }
+            }
+        }
+    }
+}
+//стили только для Firefox (страница Стоматология подробнее)
+@-moz-document url-prefix() {
+    .block {
+        &__triangles_left {
+            &.tr-margin_1 {
+                top: 453px;
+                @media screen and (max-width: 1257px) {
+                    top: 475px;
+                }
+                @media screen and (max-width: 1000px) {
+                    display: none;
+                }
+            }
+        }
+    }
+}
+//стили только для IE (страница Стоматология подробнее)
+@media screen and (-ms-high-contrast: active) and (-ms-high-contrast: none) {
+    .block {
+        &__triangles_left {
+            &.tr-margin_1 {
+                top: 453px;
+                @media screen and (max-width: 1257px) {
+                    top: 475px;
+                }
+                @media screen and (max-width: 1000px) {
+                    display: none;
+                }
+            }
+        }
+    }
+}
+//стили треугольников страницы Контакты
+.contacts {
+    &__middle_triangle {
+        position: absolute; 
+        left: 0;
+        width: 713px;  
+        height: 462px; 
+        background-color: #a6ce39; 
+        background: linear-gradient(-135deg, transparent 327px, #a6ce39 0);
+        @media screen and (max-width: 1650px) {
+            width: 545px;
+        }
+        @include laptop {
+            width: 417px;
+        }
+        @include tablets {
+            width: 270px;
+        }
+        @include min-tablets {
+            width: 185px;
+        }
+        @include phones {
+            display: none;
+        }
+    }
+    &__triangles_right {
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+    &__right_darkblue {
+        position: absolute;
+        top: 253px;
+        right: 0;
+        width: 427px;  
+        height: 525px; 
+        background-color: #005382; 
+        background:linear-gradient(135deg, transparent 367px, #005382 0);
+        @media screen and (max-width: 1650px) {
+            width: 253px;
+        }
+        @include laptop {
+            width: 170px;
+        }
+        @include tablets {
+            display: none;
+        }
+    }
+    &__right_lightblue {
+        position: absolute;
+        top: 215px;
+        right: 0;
+        background-color: #00b6bc; 
+        background:linear-gradient(135deg, transparent 357px, #00b6bc 0);
+    }
+    &__lightblue_1 { 
+        width: 421px;
+        height: 518px;
+        top: 310px;
+        right: 0;
+        position: absolute;
+        background:linear-gradient(-45deg, transparent 341px, #00b6bc 0); 
+        @media screen and (max-width: 1650px) {
+            width: 233px;
+            background:linear-gradient(-45deg, transparent 208px, #00b6bc 0); 
+        }
+        @include laptop {
+            width: 170px;
+            height: 626px;
+            background:linear-gradient(-45deg, transparent 236px, #00b6bc 0); 
+        }
+        @include tablets {
+            display: none;
+        }
+    }
+    &__lightblue_2 { 
+        width: 498px;
+        height: 465px;
+        top: 310px;
+        position: absolute;
+        right: 421px;
+        background:linear-gradient(45deg, transparent 352px, #00b6bc 0); 
+        @media screen and (max-width: 1650px) {
+            right: 233px;
+        }
+        @include laptop {
+            width: 470px;
+            height: 591px;
+            right: 170px;
+            background:linear-gradient(45deg, transparent 423px, #00b6bc 0); 
+        }
+        @include tablets {
+            right: 0;
+        }
+        @include min-tablets {
+            top: 265px;
+            width: 295px;
+        }
+        @include phones {
+            display: none;
+        }
+    }
+}
+@-moz-document url-prefix() {
+    .contacts__right_darkblue {
+        @media screen and (max-width: 1650px) {
+            width: 238px;
+        }
+        @include laptop {
+            width: 170px;
+        }
+        @include tablets {
+            display: none;
+        }
+    }
+}
