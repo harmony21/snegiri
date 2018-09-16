@@ -347,9 +347,9 @@ $min-phones: 420px;
         position: absolute; 
         left: 0;
         width: 713px;  
-        height: 462px; 
+        height: 465px; 
         background-color: #a6ce39; 
-        background: linear-gradient(-135deg, transparent 327px, #a6ce39 0);
+        background: linear-gradient(-135deg, transparent 330px, #a6ce39 0);
         @media screen and (max-width: 1650px) {
             width: 545px;
         }
@@ -417,7 +417,7 @@ $min-phones: 420px;
         }
     }
     &__lightblue_2 { 
-        width: 498px;
+        width: 503px;
         height: 465px;
         top: 310px;
         position: absolute;

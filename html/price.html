@@ -30,6 +30,9 @@
                 <div class="menu_wrapper">
                     <div class="mobile-menu"><a href=""></a></div>
                     <ul class="top_menu">
+                        <li class="top_menu__item hidden-logo"><a class="top_menu__link" href="..//index.html" title="На главную">
+                            <img src="..//images/logo_footer.png" alt="">
+                            </a></li>
                         <li class="top_menu__item inside"><a class="top_menu__link mobile" href="..//index.html" title="О Центре">О Центре </a> 
                         <div class="inside_menu__wrap">
                             <ul class="inside_menu"> 
@@ -46,35 +49,76 @@
                         <li class="top_menu__item"><a class="top_menu__link" href="gynecology.html" title="Врачи">Врачи</a></li>
                         <li class="top_menu__item"><a class="top_menu__link active" href="price.html" title="Цены">Цены</a></li>
                         <li class="top_menu__item"><a class="top_menu__link" href="actions.html" title="Акции">Акции</a></li>
-                        <li class="top_menu__item inside"><a class="top_menu__link mobile" href="reviews.html" title="Отзывы">Отзывы</a>
-                            <div class="inside_menu__wrap">
-                                <ul class="inside_menu"> 
-                                    <li><a href="history.html" title="Миссия и ценности">Счастливые истории</a></li>
-                                    <li><a href="reviews.html" title="Лицензия">Гостевая книга</a></li>
-                                </ul> 
-                            </div>
-                        </li>
+                        <li class="top_menu__item"><a class="top_menu__link" href="reviews.html" title="Отзывы">Отзывы</a></li>
                         <li class="top_menu__item"><a class="top_menu__link" href="contacts.html" title="Контакты">Контакты</a></li>
                     </ul>
                 </div>
             </div>
         </div>
-        <div style="clear:both;"></div> 
         <div class="block__triangles_left tr-margin">
-            <div class="block__left_top yellow"> 
-                <div class="block__triangle_1 red"></div>
+            <div class="block__left_top pink"> 
+                <div class="block__triangle_1 purple"></div>
             </div> 
-            <div class="block__triangle_2 red"></div>
+            <div class="block__triangle_2 purple"></div>
         </div>
+        <div class="cookies">
+            <a href="..//index.html">Главная</a>
+            <a href="services.html">Цены</a>
+        </div>
+        <h1 class="block-title">Прайс на основные позиции</h1>
+
+
         <div class="prices">
-            <div class="cookies--prices">
-                <a href="..//index.html">Главная</a>
-                <a href="services.html">Цены</a>
-            </div>
-            <h1 class="prices__title">Прайс на медицинские услуги клиники</h1>
-            <hr>
             <ul class="prices__list">
-                <li class="prices__item"><a href="">Стоматология</a>
+                <li class="prices__item"><a href="" id="100">Дневной стационар</a>
+                    <div class="prices__wrap">
+                        <div class="prices__content">
+                            <div class="prices__service">
+                                <p class="inside-list__item">Кислородные ингаляции</p>
+                                <p class="inside-price__item">500 RUB</p>
+                            </div>
+                            <div class="prices__service">
+                                <p class="inside-list__item">Эффективное лечение в комфортных условиях</p>
+                                <p class="inside-price__item">500 RUB</p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="prices__item"><a href="" id="101">Гинекология, акушерство</a>
+                    <div class="prices__wrap">
+                        <div class="prices__content">
+                            <div class="prices__service">
+                                <p class="inside-list__item">Плазмолифтинг в гинекологии</p>
+                                <p class="inside-price__item">500 RUB</p>
+                            </div>
+                            <div class="prices__service">
+                                <p class="inside-list__item">Детская гинекология</p>
+                                <p class="inside-price__item">500 RUB</p>
+                            </div>
+                            <div class="prices__service">
+                                <p class="inside-list__item">Лазерные технологии</p>
+                                <p class="inside-price__item">500 RUB</p>
+                            </div>
+                            <div class="prices__service">
+                                <p class="inside-list__item">Бесплодие</p>
+                                <p class="inside-price__item">500 RUB</p>
+                            </div>
+                            <div class="prices__service">
+                                <p class="inside-list__item">Невынашивание беременности</p>
+                                <p class="inside-price__item">500 RUB</p>
+                            </div>
+                            <div class="prices__service">
+                                <p class="inside-list__item">Консультация и осмотр акушера-гинеколога</p>
+                                <p class="inside-price__item">500 RUB</p>
+                            </div>
+                            <div class="prices__service">
+                                <p class="inside-list__item">Индивидуальный подбор контрацепции</p>
+                                <p class="inside-price__item">500 RUB</p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="prices__item" id="102"><a href="">Стоматология</a>
                     <div class="prices__wrap">
                         <div class="prices__content">
                             <div class="prices__service">
@@ -86,7 +130,7 @@
                                 <p class="inside-price__item">500 RUB</p>
                             </div>
                             <div class="prices__service">
-                                <p class="inside-list__item">Ортодонтическое лечение с использованием брекет-системы (отдельные манипуляции)</p>
+                                <p class="inside-list__item">Ортодонтическое лечение с использованием брекет-системы</p>
                                 <p class="inside-price__item">500 RUB</p>
                             </div>
                             <div class="prices__service">
@@ -124,69 +168,71 @@
                         </div>
                     </div>
                 </li>
-                <li class="prices__item"><a href="">Дневной стационар</a>
+                <li class="prices__item"><a href="" id="103">Урология</a>
                     <div class="prices__wrap">
                         <div class="prices__content">
                             <div class="prices__service">
-                                <p class="inside-list__item">Кислородные ингаляции</p>
-                                <p class="inside-price__item">500 RUB</p>
-                            </div>
-                            <div class="prices__service">
-                                <p class="inside-list__item">Эффективное лечение в комфортных условиях</p>
+                                <p class="inside-list__item">Консультация врача-уролога-андролога</p>
                                 <p class="inside-price__item">500 RUB</p>
                             </div>
                         </div>
                     </div>
                 </li>
-                <li class="prices__item"><a href="">Гинекология</a>
+                <li class="prices__item"><a href="" id="104">Хирургия</a>
                     <div class="prices__wrap">
                         <div class="prices__content">
                             <div class="prices__service">
-                                <p class="inside-list__item">Плазмолифтинг в гинекологии</p>
-                                <p class="inside-price__item">500 RUB</p>
-                            </div>
-                            <div class="prices__service">
-                                <p class="inside-list__item">Детская гинекология</p>
-                                <p class="inside-price__item">500 RUB</p>
-                            </div>
-                            <div class="prices__service">
-                                <p class="inside-list__item">Лазерные технологии</p>
-                                <p class="inside-price__item">500 RUB</p>
-                            </div>
-                            <div class="prices__service">
-                                <p class="inside-list__item">Бесплодие</p>
-                                <p class="inside-price__item">500 RUB</p>
-                            </div>
-                            <div class="prices__service">
-                                <p class="inside-list__item">Невынашивание беременности</p>
-                                <p class="inside-price__item">500 RUB</p>
-                            </div>
-                            <div class="prices__service">
-                                <p class="inside-list__item">Консультация и осмотр акушера-гинеколога</p>
-                                <p class="inside-price__item">500 RUB</p>
-                            </div>
-                            <div class="prices__service">
-                                <p class="inside-list__item">Индивидуальный подбор контрацепции</p>
+                                <p class="inside-list__item">Консультация врача-хирурга</p>
                                 <p class="inside-price__item">500 RUB</p>
                             </div>
                         </div>
                     </div>
                 </li>
-                <li class="prices__item"><a href="">Беременность и материнство</a>
+                <li class="prices__item"><a href="" id="105">Терапия</a>
                     <div class="prices__wrap">
                         <div class="prices__content">
                             <div class="prices__service">
-                                <p class="inside-list__item">ЭКО</p>
-                                <p class="inside-price__item">500 RUB</p>
-                            </div>
-                            <div class="prices__service">
-                                <p class="inside-list__item">Планирование семьи</p>
+                                <p class="inside-list__item">Консультация врача-терапевта</p>
                                 <p class="inside-price__item">500 RUB</p>
                             </div>
                         </div>
                     </div>
                 </li>
-                <li class="prices__item"><a href="">Гастроэнтерология</a>
+                <li class="prices__item"><a href="" id="106">Ультразвуковое исследование</a>
+                    <div class="prices__wrap">
+                        <div class="prices__content">
+                            <div class="prices__service">
+                                <p class="inside-list__item">УЗИ всех органов и систем</p>
+                                <p class="inside-price__item">500 RUB</p>
+                            </div> 
+                            <div class="prices__service">
+                                <p class="inside-list__item">УЗИ во время беременности</p>
+                                <p class="inside-price__item">500 RUB</p>
+                            </div> 
+                        </div>
+                    </div>
+                </li>
+                <li class="prices__item"><a href="" id="107">Травматология и ортопедия</a>
+                    <div class="prices__wrap">
+                        <div class="prices__content">
+                            <div class="prices__service">
+                                <p class="inside-list__item">Прием врача-травмотолога-ортопеда</p>
+                                <p class="inside-price__item">500 RUB</p>
+                            </div> 
+                        </div>
+                    </div>
+                </li>
+                <li class="prices__item"><a href="" id="108">Оториноларингология</a>
+                    <div class="prices__wrap">
+                        <div class="prices__content">
+                            <div class="prices__service">
+                                <p class="inside-list__item">ДМС</p>
+                                <p class="inside-price__item">500 RUB</p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="prices__item"><a href="" id="109">Гастроэнтерология</a>
                     <div class="prices__wrap">
                         <div class="prices__content">
                             <div class="prices__service">
@@ -196,7 +242,31 @@
                         </div>
                     </div>
                 </li>
-                <li class="prices__item"><a href="">Кардиология</a>
+                <li class="prices__item"><a href="" id="110">Эндокринология</a>
+                    <div class="prices__wrap">
+                        <div class="prices__content">
+                            <div class="prices__service">
+                                <p class="inside-list__item">Прием эндокринолога</p>
+                                <p class="inside-price__item">500 RUB</p>
+                            </div> 
+                        </div>
+                    </div>
+                </li>
+                <li class="prices__item"><a href="" id="111">Офтмальмология</a>
+                    <div class="prices__wrap">
+                        <div class="prices__content">
+                            <div class="prices__service">
+                                <p class="inside-list__item">Аппаратное лечение нарушений зрения взрослых и детей</p>
+                                <p class="inside-price__item">500 RUB</p>
+                            </div>
+                            <div class="prices__service">
+                                <p class="inside-list__item">Прием офтальмолога</p>
+                                <p class="inside-price__item">500 RUB</p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="prices__item"><a href="" id="112">Кардиология</a>
                     <div class="prices__wrap">
                         <div class="prices__content">
                             <div class="prices__service">
@@ -214,7 +284,7 @@
                         </div>
                     </div>
                 </li>
-                <li class="prices__item"><a href="">Неврология</a>
+                <li class="prices__item"><a href="" id="113">Неврология</a>
                     <div class="prices__wrap">
                         <div class="prices__content">
                             <div class="prices__service">
@@ -224,76 +294,14 @@
                         </div>
                     </div>
                 </li>
-                <li class="prices__item"><a href="">Травматология и ортопедия</a>
-                    <div class="prices__wrap">
-                        <div class="prices__content">
-                            <div class="prices__service">
-                                <p class="inside-list__item">Прием врача-травмотолога-ортопеда</p>
-                                <p class="inside-price__item">500 RUB</p>
-                            </div> 
-                        </div>
-                    </div>
-                </li>
-                <li class="prices__item"><a href="">Ультразвуковое исследование</a>
-                    <div class="prices__wrap">
-                        <div class="prices__content">
-                            <div class="prices__service">
-                                <p class="inside-list__item">УЗИ всех органов и систем</p>
-                                <p class="inside-price__item">500 RUB</p>
-                            </div> 
-                            <div class="prices__service">
-                                <p class="inside-list__item">УЗИ во время беременности</p>
-                                <p class="inside-price__item">500 RUB</p>
-                            </div> 
-                        </div>
-                    </div>
-                </li>
-                <li class="prices__item"><a href="">Эндокринология</a>
-                    <div class="prices__wrap">
-                        <div class="prices__content">
-                            <div class="prices__service">
-                                <p class="inside-list__item">Прием эндокринолога</p>
-                                <p class="inside-price__item">500 RUB</p>
-                            </div> 
-                        </div>
-                    </div>
-                </li>
-                <li class="prices__item"><a href="">Офтмальмология</a>
-                    <div class="prices__wrap">
-                        <div class="prices__content">
-                            <div class="prices__service">
-                                <p class="inside-list__item">Аппаратное лечение нарушений зрения взрослых и детей</p>
-                                <p class="inside-price__item">500 RUB</p>
-                            </div>
-                            <div class="prices__service">
-                                <p class="inside-list__item">Прием офтальмолога</p>
-                                <p class="inside-price__item">500 RUB</p>
-                            </div>
-                        </div>
-                    </div>
-                </li>
-                <li class="prices__item"><a href="">Урология</a>
-                    <div class="prices__wrap">
-                        <div class="prices__content">
-                            <div class="prices__service">
-                                <p class="inside-list__item">Консультация врача-уролога-андролога</p>
-                                <p class="inside-price__item">500 RUB</p>
-                            </div>
-                        </div>
-                    </div>
-                </li>
-                <li class="prices__item"><a href="">Оториноларингология</a>
-                    <div class="prices__wrap">
-                        <div class="prices__content">
-                            <div class="prices__service">
-                                <p class="inside-list__item">ДМС</p>
-                                <p class="inside-price__item">500 RUB</p>
-                            </div>
-                        </div>
-                    </div>
-                </li>
-            </ul>   
-        </div>   
+            </ul> 
+            <div class="prices__more">
+                <span>Полная информация о стоимости услуг</span>
+                <a href="" class="price-link">Скачать</a>
+            </div>
+        </div>  
+
+        
         <div class="block__triangles_bottom">
             <div class="block__bottom_dark blue">
                 <div class="block__dark_1 blue"></div>
@@ -339,7 +347,7 @@
                 <div class="footer_icon_menu">
                     <ul>
                         <li><a href="#" title="записаться на прием" class="zapis--footer">записаться на прием</a></li>
-                        <li><a href="#" title="задать вопрос" class="q">задать вопрос</a></li>
+                        <li><a href="#" title="пациентам" class="q">пациентам</a></li>
                         <li><a href="#" title="политика конфиденциальности" class="c">политика конфиденциальности</a></li>
                     </ul>
                 </div>
@@ -387,6 +395,7 @@
         <script src="..//js/slide.js"></script>
         <script src="..//js/menu.js"></script>     
         <script src="..//js/form.js"></script>   
-        <script src="..//js/price.js"></script>   	
+        <script src="..//js/price.js"></script> 
+        <script src="..//js/fix-menu.js"></script>   	  
     </body>
 </html>

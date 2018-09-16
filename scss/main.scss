@@ -281,7 +281,7 @@ body {
     background-color: #007cc5;
 }
 .page_about { 
-    background-color: #8490c7; 
+    background-color: #fff; 
     padding: 30px 0;
 }
 .page_bottom {
@@ -528,6 +528,19 @@ body {
             display: block;
         }       
     }
+    &.scrolled {
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 10;
+        width: 100%;
+        height: 90px;
+        .top_menu__item {
+            &.hidden-logo {
+                display: block;
+            }
+        }
+    }
     @include min-tablets {
         padding-right: 0px;
     }
@@ -563,7 +576,7 @@ body {
 .top_menu > li { 
     float: left; 
     list-style: none;
-    margin-left: 80px;
+    margin-left: 78px;
     position: relative;
     z-index: 3;
     @media screen and (max-width: 1822px) {
@@ -605,8 +618,10 @@ body {
             }
         }
     }
+    &.hidden-logo {
+        display: none;
+    }
 }
-
 .top_menu__item:hover {
     background: #1a1c21;
     @include phones {
@@ -864,7 +879,7 @@ body {
 
 /* типовой блок на главной*/
 .block_description h2, .block_description h1 {
-    color: #fff;
+    color: #000;
     @include min-tablets {
         font-size: 26px;
     }
@@ -894,7 +909,7 @@ body {
     &__text {
         display: flex;
         flex-wrap: wrap;
-        color: white;
+        color: #000;
         @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
             width: 80%;
         }
@@ -927,80 +942,6 @@ body {
     } 
     @include phones {
          width: 85%;
-    }
-}
-
-/* услуги на главной*/
-#main .services_main {
-    width: 60%; 
-    margin: 0 auto; 
-    display: flex;
-    flex-wrap: wrap;
-    @include laptop {
-        width: 80%;
-    }
-    @include tablets {
-        width: 98%;
-    }
-    @include min-tablets {
-        width: 100%;
-        justify-content: center;
-    }
-}
-#main .serivice_main_item {
-    text-align:center; 
-    width: 20%;  
-    margin: 30px 15px; 
-    height: 245px;
-    @include tablets {
-        width: 21%; 
-    }
-    @include tablets {
-        width: 29%; 
-        height: 230px;
-    }
-    @include phones {
-        height: 150px;
-    }
-    @include min-phones {
-        width: 43%;
-        height: 150px;
-    }
-}
-#main .serivice_main_item img {
-    border-radius: 100px; 
-    border: #007CC5 0.4em solid;
-}
-#main .serivice_main_item:hover img {
-    border-color: #ffca05;
-}
-#main .serivice_main_item:hover .serivice_main_item_name {
-    color: #ffca05;
-}
-#main .serivice_main_item a {
-    color: #fff; 
-    text-decoration: none; 
-    width: 100%; 
-}
-#main .serivice_main_item_name {
-    font-weight: bold; 
-    font-size: 1.2em; 
-    margin-bottom: 10px;
-    @include min-tablets {
-        font-size: 16px;
-    }
-    @include phones {
-        font-size: 14px;
-        font-weight: normal;
-    }
-}
-#main .serivice_main_item_desc {
-    font-size: 0.9em;
-    @include min-tablets {
-        font-size: 13px;
-    }
-    @include phones {
-        display: none;
     }
 }
 
@@ -1220,15 +1161,12 @@ body {
     }
 }
 .footer_icon_menu a {
-    display:inline-block; 
+    display: flex;
+    align-items: center;
     color: #fff; 
     text-decoration: none; 
     height: 40px; 
     width: 100px;
-    @include min-tablets {
-        display: flex;
-        align-items: center;
-    }
 }
 .footer_icon_menu a:hover {
     text-decoration: underline;
@@ -1253,13 +1191,13 @@ a.c {
 a.q {
     margin-left: 20px; 
     padding-left: 50px; 
-    background: url('..//images/q.png') no-repeat left;
+    background: url('..//images/book.png') no-repeat left;
     @include min-tablets {
         font-size: 12px;
         padding-left: 60px;
     }
     @media screen and (max-width: 650px) {
-        background: url('..//images/q_320.png') no-repeat left;
+        background: url('..//images/book_320.png') no-repeat left;
         padding-left: 40px;
         font-size: 9px;
     }
@@ -1276,27 +1214,34 @@ a.q {
 }
 #main .left_top {
     overflow: hidden; 
-    position: relative;	
+    position: absolute;
+    top: -51.5%;	
     width: 585px; 
     height: 513px; 
+    background: url('..//images/photo_top_442.png') no-repeat;
+    background: url('..//images/photo_top_422.png') no-repeat;
     background: url('..//images/photo_top_411.png') no-repeat;
     @include laptop {
         width: 400px;
         height: 370px;
-        background: url('..//images/photo_top_422.png') no-repeat;
-        
+        background: url('..//images/photo_top_442.png') no-repeat;
+        background: url('..//images/photo_top_422.png') no-repeat;  
     }
     @media screen and (max-width: 1080px) {
         width: 320px;
         height: 280px;
         background: url('..//images/photo_top_442.png') no-repeat;
+        top: -51.4%;
+    }
+    @include min-tablets {
+        top: -44%;
     }
     @media screen and (max-width: 750px) {
         display: none;
     }
 }
 #main .triangle_purple_1, .triangle_purple_2 {
-    width: 198px; 
+    width: 185px; 
     height: 196px;	
     background-color: #a053a0;
     @include laptop {
@@ -1320,12 +1265,14 @@ a.q {
     background:linear-gradient(-45deg, transparent 140px, #a053a0 0);
 }
 #main .left_middle {
-    width: 596px;
-    height: 400px;
+    width: 584px;
+    height: 401px;
     background-color: #8490c7;
+    margin-top: 202px;
     @include laptop {
+        margin-top: 58px;
         width: 375px;
-        height: 543px;
+        height: 545px;
     }
     @include tablets {
         width: 350px;
@@ -1333,10 +1280,12 @@ a.q {
     @media screen and (max-width: 1080px) {
         height: 633px;
         width: 157px;
+        margin-top: -30px;
     }
     @include min-tablets {
         width: 240px;
         height: 588px;
+        margin-top: 15px;
     }
     @media screen and (max-width: 750px) {
         display: none;
@@ -1602,10 +1551,13 @@ a.q {
 //Миссия и ценности
 .mission {
     font-family: Gotham-Pro-Reg;
-    width: 730px;
-    margin: 0 auto;
+    width: 1030px;
+    margin: 40px auto;
     z-index: 2;
     position: relative;
+    @include laptop {
+        width: 730px;
+    }
     @include min-tablets {
         display: flex;
         flex-direction: column;
@@ -1614,17 +1566,7 @@ a.q {
     }
     @include phones {
         width: 70vw;
-        padding: 50px 40px;
-    }
-    &__title {
-        text-transform: uppercase;
-        font-size: 21px;
-        text-align: center;
-        color: #ec1551;
-        font-weight: normal;
-        @include phones {
-            font-size: 14px;
-        }
+        padding: 10px 0px;
     }
     &__slogan {
         font-weight: bold;
@@ -1681,14 +1623,20 @@ a.q {
         }
     }
 }
-.cookies, .cookies--spec, .cookies--license, .cookies--gynecology, 
-.cookies--actions, .cookies--prices, .cookies--contacts {
-    margin: 50px 0;
+.cookies {
+    margin: 30px auto;
     font-size: 13px;
     text-transform: uppercase;
     z-index: 1;
     position: relative;
     align-self: flex-start;
+    width: 1030px;
+    @include laptop {
+        width: 730px;
+    }
+    @include min-tablets {
+        width: 88vw;
+    }
     @include phones {
         display: none;
     }
@@ -1704,30 +1652,19 @@ a.q {
         color: #ec1551;
     }
 }
-.cookies--spec {
-    margin-left: 28%;
+.block-title {
+    text-transform: uppercase;
+    font-size: 28px;
+    text-align: center;
+    color: #ec1551;
+    font-weight: normal;
     @include laptop {
-        margin-left: 20%;
+        font-size: 21px;
     }
-    @include tablets {
-        margin-left: 10%;
+    @include phones {
+        font-size: 16px;
+        margin-top: 30px;
     }
-}
-.cookies--gynecology {
-    margin-left: 10%;
-}
-.cookies--actions {
-    margin-left: 30%;
-    @include laptop {
-        margin-left: 25%;
-    }
-}
-.cookies--prices {
-    margin-left: 15%;
-}
-.cookies--contacts {
-    margin-left: 25%;
-    margin-bottom: 30px;
 }
 //Наши специалисты
 .specialists {
@@ -1789,12 +1726,22 @@ a.q {
         }
     }  
 }
+@-moz-document url-prefix() {
+    .specialists {
+        .block__triangles_left {
+            top: 552px;
+        }
+    }
+}
 //Специалисты, раздел "Гинекология"
 .gynecology {
-    width: 1024px;
-    margin: 50px auto 150px auto;
+    width: 1030px;
+    margin: 0px auto 150px auto;
     position: relative;
     z-index: 2;
+    @include laptop {
+        width: 730px;
+    }
     @include tablets {
         display: flex;
         width: 90%;
@@ -1803,17 +1750,24 @@ a.q {
     @include min-tablets {
         margin: 50px auto;
     }
-    &__title {
-        font-size: 20px;
-        text-transform: uppercase;
-        font-weight: normal;
-        text-align: center;
+    @include phones {
+        margin: 0 auto;
     }
     &__specialists {
         display: flex;
-        padding: 0 88px;
         justify-content: space-around;
         flex-wrap: wrap;
+        width: 1030px;
+        @include laptop {
+            width: 730px;
+            justify-content: space-between;
+            margin: 0 auto;
+        }
+        @include min-tablets {
+            flex-direction: column;
+            width: 100%;
+            align-items: center;
+        }
     }
 }
 .doctor {
@@ -1821,7 +1775,10 @@ a.q {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 181px;
+    width: 240px;
+    @include laptop {
+        width: 185px;
+    }
     &__name {
         font-size: 15px;
         font-weight: bold;
@@ -1850,11 +1807,12 @@ a.q {
     width: 69px;
     height: 69px;
     position: absolute;
-    margin-top: 24%;
-    @media screen and (max-width: 1120px) {
-        margin-top: 35%;
+    margin-top: 30%;
+    left: -15%;
+    @include laptop {
+        margin-top: 50%;
     }
-    @media screen and (max-width: 615px) {
+    @include tablets {
         display: none;
     }
     &:hover {
@@ -1867,17 +1825,15 @@ a.q {
     width: 69px;
     height: 69px;
     position: absolute;
-    right: 0%;
-    margin-top: -46%;
+    right: -15%;
+    margin-top: -38.5%;
     z-index: 2;
+    @include laptop {
+        margin-top: -50%;
+    }
     @include tablets {
-        margin-top: 24%;
-    }
-    @media screen and (max-width: 1120px) {
-        margin-top: 35%;
-    }
-    @media screen and (max-width: 615px) {
         display: none;
+        margin-top: 24%;
     }
     &:hover {
         cursor: pointer;
@@ -1887,12 +1843,15 @@ a.q {
 
 //Гинекология, подробнее о специалисте
 .specialist {
-    width: 1024px;
+    width: 1030px;
     margin: 85px auto 264px auto;
     display: flex;
     justify-content: center;
     z-index: 1;
     position: relative;
+    @include laptop {
+        width: 730px;
+    }
     @include tablets {
         display: flex;
         width: 100%;
@@ -1947,8 +1906,8 @@ a.q {
         width: 69px;
         height: 69px;
         position: absolute;
-        left: 0%;
-        margin-top: 10%;
+        left: -15%;
+        margin-top: 15%;
         &:hover {
             cursor: pointer;
             transform: scale(1.1);
@@ -1962,8 +1921,8 @@ a.q {
         width: 69px;
         height: 69px;
         position: absolute;
-        right: 3%;
-        margin-top: 10%;
+        right: -15%;
+        margin-top: 15%;
         z-index: 2;
         @include tablets {
             right: 0;
@@ -1979,37 +1938,35 @@ a.q {
 }
 .entry {
     margin-top: 15px;
-    background: #00b6bc;
+    background: #007cc5;
     padding: 12px 30px;
     border: none;
     border-radius: 6px;
     color: white;
     text-transform: uppercase;
     font-family: Gotham-Pro-Reg;
-    @include min-tablets {
-        background: black;
-    }
     &:hover {
-        box-shadow: 0 0 10px rgba(0,0,0,0.5);
         cursor: pointer;
+        background-color: darken(#007cc5, 5);
+        box-shadow: 0 0 10px rgba(0,0,0,0.5)
     }
 }
 
 //Лицензия
-.wrap {
-    background: #e5e5e5;
-}
 .license {
-    width: 737px;
-    margin: 0 auto;
+    width: 1030px;
+    margin: 30px auto;
     display: flex;
     flex-direction: column;
     align-items: center;
+    @include laptop {
+        width: 730px;
+    }
     @include min-tablets {
-        width: 80%;
+        width: 88vw;
     }
     @include phones {
-        padding-top: 50px;
+        padding-top: 20px;
     }
     &__img {
         @include phones {
@@ -2018,12 +1975,6 @@ a.q {
         @include min-phones {
             width: 300px;
         }
-    }
-    &__title {
-        font-size: 20px;
-        text-transform: uppercase;
-        font-weight: normal;
-        margin-bottom: 40px;
     }
     &__doc {
         display: flex;
@@ -2052,28 +2003,19 @@ a.q {
 
 //Вакансии
 .vacancy {
-    width: 920px;
+    width: 1030px;
     margin: 0 auto;
     margin-bottom: 320px;
     z-index: 1;
     position: relative;
     @include laptop {
         margin-bottom: 100px;
+        width: 730px;
     }
     @include tablets {
         display: flex;
         flex-direction: column;
         width: 90%;
-    }
-    @include phones {
-        padding-top: 50px;
-    }
-    &__title {
-        font-size: 20px;
-        text-transform: uppercase;
-        color: #ec1551;
-        font-weight: normal;
-        text-align: center;
     }
     &__list {
         font-size: 15px;
@@ -2116,11 +2058,14 @@ a.q {
         background: #f8f8f8;
         box-shadow: 0 0 10px rgba(0,0,0,0.5);
         padding: 40px;
-        line-height: 2.5;
+        line-height: 3.5;
         display: flex;
         flex-direction: column;
         z-index: 5;
         position: relative;
+        @include laptop {
+            font-size: 13px;
+        }
         @media screen and (max-width: 600px) {
             font-size: 14px;
         }
@@ -2142,13 +2087,19 @@ a.q {
             align-items: flex-start;
         }
         input {
-            width: 462px;
+            width: 560px;
+            @include laptop {
+                width: 430px;
+            }
             @media screen and (max-width: 600px) {
                 width: 100%;
             }
         }
         .input-protect {
-            width: 150px;
+            width: 236px;
+            @include laptop {
+                width: 145px;
+            }
         }
         input[type="file"] {
             position: absolute;
@@ -2166,7 +2117,7 @@ a.q {
             display: flex;
             justify-content: center;
             align-items: center;
-            margin-right: 180px;
+            margin-right: 270px;
             @include tablets {
                 margin-right: 3%;
             }
@@ -2199,8 +2150,11 @@ a.q {
         }
         a {
             color: #ec1551;
-            font-size: 14px;
+            font-size: 15px;
             margin-left: 10px;
+            @include laptop {
+                font-size: 11px;
+            }
             @media screen and (max-width: 600px) {
                 font-size: 12px;
             }
@@ -2230,35 +2184,31 @@ a.q {
 
 //Новости
 .news {
-    width: 720px;
+    width: 1030px;
     margin: 0 auto;
     z-index: 1;
     position: relative;
+    @include laptop {
+        width: 730px;
+    }
     @include min-tablets {
         display: flex;
         flex-direction: column;
         width: 90%;
     }
-    @include phones {
-        padding-top: 50px;
-    }
-    &__title {
-        font-size: 25px;
-        text-transform: uppercase;
-        font-weight: normal;
-        text-align: center;
-        @include phones {
-            font-size: 15px;
-        }
-    }
     &__item {
         margin-top: 40px;
+        display: flex;
+        flex-direction: column;
         img {
             margin-top: 15px;
         }
         .person-photo {
             width: 200px;
         }
+    }
+    &__right {
+        margin-left: 30px;
     }
     &__wrap {
         display: flex;
@@ -2294,7 +2244,7 @@ a.q {
     &__link {
         align-self: flex-end;
         a {
-            color: #f05120;
+            color: #ec1551;
             text-decoration: none;
             &:hover {
                 text-decoration: underline;
@@ -2315,6 +2265,16 @@ a.q {
         &:hover {
             cursor: pointer;
             text-decoration: underline;
+        }
+    }
+    &__prev {
+        background: url("..//images/arrow_page_prev.png") no-repeat;
+        width: 12px;
+        height: 14px;
+        margin-right: 10px;
+        &:hover {
+            background-position: 0 -14px;
+            cursor: pointer;
         }
     }
     &__next {
@@ -2339,10 +2299,13 @@ a.q {
 }
 //Фото и видео
 .photos {
-    width: 875px;
+    width: 1030px;
     margin: 0 auto;
     z-index: 1;
     position: relative;
+    @include laptop {
+        width: 730px;
+    }
     @include tablets {
         display: flex;
         width: 90%;
@@ -2357,13 +2320,6 @@ a.q {
         width: 100%;
         align-items: center;
         padding: 0;
-        padding-top: 50px;
-    }
-    &__title {
-        font-size: 20px;
-        font-weight: normal;
-        text-transform: uppercase;
-        text-align: center;
     }
 }
 .files {
@@ -2392,18 +2348,25 @@ a.q {
         align-items: center;
         flex-direction: column;
         font-size: 14px;
+        @include laptop {
+            width: 200px;
+            height: 200px;
+        }
         @media screen and (max-width: 940px) {
            margin-top: 20px;
         }
     }
     &__item--first {
         background: url('..//images/photo1.png') no-repeat;
+        background-size: contain;
     }
     &__item--second {
         background: url('..//images/photo2.png') no-repeat;
+        background-size: contain;
     }
     &__item--third {
         background: url('..//images/photo3.png') no-repeat;
+        background-size: contain;
     }
     &__icon {
         display: flex;
@@ -2425,11 +2388,15 @@ a.q {
         align-items: center;
         margin-top: 30px;
         img {
+            @include laptop {
+                width: 320px;
+            }
             @media screen and (max-width: 450px) {
                 width: 250px;
             }
         }
     }
+    
     .video p {
         font-size: 13px;
         text-align: center;
@@ -2439,18 +2406,18 @@ a.q {
 
 //Услуги
 .services {
-    width: 1026px;
+    width: 1030px;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
     align-items: center;
     z-index: 1;
     position: relative;
+    @include laptop {
+        width: 730px;
+    }
     @include tablets {
         width: 100%;
-    }
-    @include phones {
-        padding-top: 50px;
     }
     &__title {
         font-size: 20px;
@@ -2458,32 +2425,17 @@ a.q {
         font-weight: normal;
     }
 }
-.price {
-    background-color: #00b6bc;
-    padding: 9px 35px;
-    font-size: 13px;
-    text-transform: uppercase;
-    border: none;
-    border-radius: 5px;
-    margin-top: 20px;
-    font-family: Gotham-Pro-Reg;
-    color: white;
-    text-decoration: none;
-    &:hover {
-        cursor: pointer;
-        box-shadow: 0 0 10px rgba(0,0,0,0.5);
-    }  
-}
 .services_main {
     display: flex;
     flex-wrap: wrap;
     margin-bottom: 200px;
     margin-top: 35px;
+    width: 1030px;
     @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
         width: 100%;
     }
     @include laptop {
-        width: 80%;
+        width: 730px;
     }
     @include tablets {
         width: 98%;
@@ -2498,6 +2450,9 @@ a.q {
     text-align:center; 
     width: 21%;  
     margin: 20px 16px; 
+    @include laptop {
+        width: 20%;
+    }
     @include tablets {
         width: 21%; 
     }
@@ -2517,6 +2472,8 @@ a.q {
     border-radius: 100px;
     margin-bottom: 25px; 
     border: 2px solid #007cc5;
+    width: 79px;
+    height: 79px;
 }
 .serivice_main_item:hover .serivice_main_item_name {
     color: #007cc5;
@@ -2530,6 +2487,9 @@ a.q {
     font-weight: bold; 
     font-size: 17px; 
     margin-bottom: 10px;
+    @include laptop {
+        font-size: 14px;
+    }
     @include min-tablets {
         font-size: 16px;
     }
@@ -2554,35 +2514,30 @@ a.q {
     text-decoration: none;
     text-transform: uppercase;
     color: white;
-    background-color: #00b6bc;
+    background-color: #007cc5;
     padding: 6px 5px;
     border-radius: 5px;
     margin-left: 10px;
     &:hover {
-        background-color: darken(#00b6bc, 5);
+        background-color: darken(#007cc5, 5);
+        box-shadow: 0 0 10px rgba(0,0,0,0.5)
     }
 
 }
 
 //Стоматология
 .stomatology {
-    width: 845px;
+    width: 1030px;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
     align-items: center;
+    @include laptop {
+        width: 730px;
+    }
     @include min-tablets {
         width: 100%;
         margin: 0;
-    }
-    @include phones {
-        padding-top: 50px;
-    }
-    &__title {
-        font-size: 20px;
-        text-transform: uppercase;
-        font-weight: normal;
-        text-align: center;
     }
     &__wrap {
         display: flex;
@@ -2592,6 +2547,9 @@ a.q {
         position: relative;
         @include min-tablets {
             flex-direction: column;
+        }
+        @include phones {
+            margin-top: 20px;
         }
     }
     &__item {
@@ -2625,7 +2583,7 @@ a.q {
         align-items: center;
         margin-top: 20px;
         a {
-            color: #f05120;
+            color: #ec1551;
             text-decoration: none;
             font-size: 17px;
             margin-right: 7px;
@@ -2638,11 +2596,14 @@ a.q {
 
 //Стоматология подробнее
 .details {
-    width: 730px;
+    width: 1030px;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
     align-items: center;
+    @include laptop {
+        width: 730px;
+    }
     @include min-tablets {
         width: 90%;
     }
@@ -2744,11 +2705,14 @@ a.q {
 
 //Стоимость
 .prices {
-    width: 976px;
+    width: 1030px;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
     align-items: center;
+    @include laptop {
+        width: 730px;
+    }
     @include tablets {
         display: flex;
         width: 100%;
@@ -2773,9 +2737,24 @@ a.q {
     &__list {
         line-height: 1.8;
         margin-top: 40px;
-        margin-bottom: 500px;
+        margin-bottom: 50px;
         position: relative;
         z-index: 1;
+    }
+    &__more {
+        margin-bottom: 400px;
+        display: flex;
+        align-items: center;
+        @include phones {
+            flex-direction: column;
+        }
+        span {
+            font-size: 14px;
+            @include phones {
+                margin-bottom: 10px;
+                text-align: center;
+            }
+        } 
     }
     &__item {
         list-style: none;
@@ -2819,12 +2798,6 @@ a.q {
         justify-content: space-between;
     }
 }
-hr {
-    margin-top: 10px;
-    width: 60%;               
-    background-color:#acacac;
-    height: 2px;
-}
 .inside-list {
     &__item {
         list-style: none;
@@ -2850,20 +2823,14 @@ hr {
 .actions {
     z-index: 1;
     position: relative;
-    &__title {
-        font-size: 20px;
-        text-transform: uppercase;
-        color: #ec1551;
-        text-align: center;
-        font-weight: normal;
-        margin: 80px auto 55px auto;
-        @include phones {
-            margin: 40px auto 30px auto;
-        }
-    }
     &__item {
-        width: 730px;
-        margin: 70px auto 0 auto;
+        width: 1030px;
+        margin: 50px auto 0 auto;
+        display: flex;
+        align-items: center;
+        @include laptop {
+            width: 730px;
+        }
         @include min-tablets {
             display: flex;
             flex-direction: column;
@@ -2871,6 +2838,7 @@ hr {
             margin: 0;
             padding: 0 0 0 10px;
             align-items: flex-start;
+            margin-top: 20px;
             @include phones {
                 width: 96%;
             }
@@ -2881,16 +2849,19 @@ hr {
         p {
             font-size: 14px;
             margin-top: 25px;
-            padding: 0 20px;
             @include min-phones {
                 padding: 0 10px;
                 align-self: flex-start;
             }
         }
     }
+    &__right {
+        margin-left: 30px;
+    }
     &__offer {
-        font-size: 20px !important;
+        font-size: 16px !important;
         font-weight: bold;
+        margin-bottom: 25px;
         @include min-phones {
             align-self: flex-start;
         }
@@ -2903,7 +2874,7 @@ hr {
     &__next {
         margin-left: 70px;
         text-decoration: none;
-        color: #f05120;
+        color: #ec1551;
         &:hover {
             text-decoration: underline;
         }
@@ -2938,25 +2909,30 @@ hr {
 .reviews {
     z-index: 1;
     position: relative;
+    width: 1030px;
+    margin: 0 auto;
+    @include laptop {
+        width: 730px;
+    }
+    @include min-tablets {
+        width: 90%;
+    }
     &__prew {
-        width: 156px;
-        margin: 80px auto 0 auto;
+        text-align: center;
+        margin: 20px auto 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         @include phones {
             margin: 40px auto 0 auto;
         }
-    }
-    &__title {
-        font-size: 20px;
-        font-weight: normal;
-        text-transform: uppercase;
-        text-align: center;
     }
     &__info {
         font-size: 12px;
         margin-top: 20px;
     }
     &__publish {
-        background: #ec1551;
+        background-color: #007cc5;
         padding: 10px;
         margin-top: 15px;
         border: none;
@@ -2964,15 +2940,12 @@ hr {
         color: white;
         text-transform: uppercase;
         font-size: 12px;
-        font-weight: bold;
         width: 156px;
         font-family: Gotham-Pro-Reg;
-        @include phones {
-            background: black;
-        }
         &:hover {
             cursor: pointer;
-            box-shadow: 0 0 10px rgba(0,0,0,0.5)
+            box-shadow: 0 0 10px rgba(0,0,0,0.5);
+            background-color: darken(#007cc5, 5);
         }
     }
 }

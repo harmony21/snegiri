@@ -9,6 +9,7 @@
         <link href="..//css/triangles.css" type="text/css" rel="stylesheet" />
     </head>
     <body>
+
         <div class="page_100 page_top">
             <div class="top_content">
                 <div class="container" id="others">
@@ -30,6 +31,9 @@
                 <div class="menu_wrapper">
                     <div class="mobile-menu"><a href=""></a></div>
                     <ul class="top_menu">
+                        <li class="top_menu__item hidden-logo"><a class="top_menu__link" href="..//index.html" title="На главную">
+                            <img src="..//images/logo_footer.png" alt="">
+                            </a></li>
                         <li class="top_menu__item inside"><a class="top_menu__link active mobile" href="..//index.html" title="О Центре">О Центре </a> 
                         <div class="inside_menu__wrap">
                             <ul class="inside_menu"> 
@@ -46,47 +50,41 @@
                         <li class="top_menu__item"><a class="top_menu__link" href="gynecology.html" title="Врачи">Врачи</a></li>
                         <li class="top_menu__item"><a class="top_menu__link" href="price.html" title="Цены">Цены</a></li>
                         <li class="top_menu__item"><a class="top_menu__link" href="actions.html" title="Акции">Акции</a></li>
-                        <li class="top_menu__item inside"><a class="top_menu__link mobile" href="reviews.html" title="Отзывы">Отзывы</a>
-                            <div class="inside_menu__wrap">
-                                <ul class="inside_menu"> 
-                                    <li><a href="history.html" title="Миссия и ценности">Счастливые истории</a></li>
-                                    <li><a href="reviews.html" title="Лицензия">Гостевая книга</a></li>
-                                </ul> 
-                            </div>
-                        </li>
+                        <li class="top_menu__item"><a class="top_menu__link" href="reviews.html" title="Отзывы">Отзывы</a></li>
                         <li class="top_menu__item"><a class="top_menu__link" href="contacts.html" title="Контакты">Контакты</a></li>
                     </ul>
                 </div>
             </div>
         </div>
-        <div style="clear:both;"></div> 
         <div class="block__triangles_left tr-margin">
             <div class="block__left_top purple"> 
                 <div class="block__triangle_1 lightpurple"></div>
             </div> 
             <div class="block__triangle_2 lightpurple"></div>
         </div>
-        <div class="wrap"> 
-            <div class="license">
-                <div class="cookies--license">
-                    <a href="..//index.html">Главная</a>
-                    <a href="mission.html">О центре</a>
-                    <a href="license.html">Лицензия</a>
-                </div>
-                <h1 class="license__title">Лицензия</h1>
-                <img src="..//images/license.png" alt="" class="license__img">
-                <div class="license__doc">
-                    <img src="..//images/doc_1.png" alt="">
-                    <div class="license__desc">
-                        Лицензия на осуществление медицинской деятельности
-                        <div class="license__link">
-                            <img src="..//images/download.png" alt="">
-                            <a href="">скачать</a>
-                        </div>
-                    </div>
-                </div>   
-            </div>
+        <div class="cookies">
+            <a href="..//index.html">Главная</a>
+            <a href="mission.html">О центре</a>
+            <a href="license.html">Лицензия</a>
         </div>
+        <h1 class="block-title">Лицензия</h1>
+        
+
+        <div class="license">
+            <img src="..//images/license.png" alt="" class="license__img">
+            <div class="license__doc">
+                <img src="..//images/doc_1.png" alt="">
+                <div class="license__desc">
+                    Лицензия на осуществление медицинской деятельности
+                    <div class="license__link">
+                        <img src="..//images/download.png" alt="">
+                        <a href="">скачать</a>
+                    </div>
+                </div>
+            </div>   
+        </div>
+
+
         <div class="block__triangles_bottom">
             <div class="block__bottom_dark blue">
                 <div class="block__dark_1 blue"></div>
@@ -132,12 +130,14 @@
                 <div class="footer_icon_menu">
                     <ul>
                         <li><a href="#" title="записаться на прием" class="zapis--footer">записаться на прием</a></li>
-                        <li><a href="#" title="задать вопрос" class="q">задать вопрос</a></li>
+                        <li><a href="#" title="пациентам" class="q">пациентам</a></li>
                         <li><a href="#" title="политика конфиденциальности" class="c">политика конфиденциальности</a></li>
                     </ul>
                 </div>
             </div>
         </div>
+
+        
         <!-- Всплывающее окно (форма записи) -->
         <div class="wrapper"></div>
         <form action="" class="form">
@@ -179,6 +179,7 @@
         <script src="..//js/jquery-1.12.0.min.js"></script>
         <script src="..//js/slide.js"></script>
         <script src="..//js/menu.js"></script>     
-        <script src="..//js/form.js"></script>    	
+        <script src="..//js/form.js"></script> 
+        <script src="..//js/fix-menu.js"></script>     	
     </body>
 </html>
